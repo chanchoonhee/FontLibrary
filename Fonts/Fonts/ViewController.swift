@@ -8,6 +8,13 @@
 
 import UIKit
 
+let path = Bundle.main.path(forResource: "Property List", ofType: "plist")!
+let url = URL(fileURLWithPath: path)
+let data = try! Data(contentsOf: url)
+let plist = try! PropertyListSerialization.propertyList(from: data, options: .mutableContainers, format: nil)
+
+let dictArray = plist as! Dictionary<String, Dictionary<String, Any>>
+
 class ViewController: UIViewController {
     
     @IBAction func ColorMe(_ sender: Any) {
@@ -17,7 +24,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var textfield1: UITextField!
     @IBOutlet weak var HelloButton: UIButton!
     //    enum fonts{
-    
     //        case aIACondMedium16
     //        case aIACondMedium26
     //        case aIACondMedium20
@@ -32,7 +38,9 @@ class ViewController: UIViewController {
     //    }
     
     
+  
     
+
     @IBOutlet weak var everestCMed: UILabel!
     @IBOutlet weak var everestBOLD: UILabel!
     
@@ -131,6 +139,12 @@ class ViewController: UIViewController {
     var red = UIColor(colorLiteralRed: 100, green: 0, blue: 0, alpha: 1.0)
     
     
+    /// Sets the text attributes for UITextField object
+    ///
+    /// - Parameters:
+    ///   - font: <#font description#>
+    ///   - color: <#color description#>
+    ///   - textField: <#textField description#>
     func setTextAttributes(_ font: UIFont, _ color: UIColor, textField: UITextField ){
         
         let content = textField.text
@@ -142,6 +156,12 @@ class ViewController: UIViewController {
         
     }
     
+    /// Sets the text attributes for the UILabel object
+    ///
+    /// - Parameters:
+    ///   - font:
+    ///   - color: <#color description#>
+    ///   - label: The name of the label
     func setTextAttributes(_ font: UIFont, _ color: UIColor, label: UILabel){
         
         
@@ -154,6 +174,12 @@ class ViewController: UIViewController {
         
         
     }
+    /// Sets the text attributes for the UITextView object
+    ///
+    /// - Parameters:
+    ///   - font: <#font description#>
+    ///   - color: <#color description#>
+    ///   - textView: <#textView description#>
     func setTextAttributes(_ font: UIFont, _ color: UIColor, textView: UITextView ){
         let content = textView.text
         let attributes: [String:Any] = [
@@ -163,6 +189,13 @@ class ViewController: UIViewController {
         textView.attributedText = attributedString
         
     }
+    
+    /// Sets the text attributes for the UIButton object
+    ///
+    /// - Parameters:
+    ///   - font: <#font description#>
+    ///   - color: <#color description#>
+    ///   - button: <#button description#>
     func setTextAttributes(_ font: UIFont, _ color: UIColor, button: UIButton) {
         let content = button.titleLabel
         let attributes: [String:Any] = [
@@ -174,8 +207,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view, typically from a nib.
-        //print(UIFont.familyNames)
+        
         
         
         //        everestCMed.font = setFont(.arial12)
@@ -197,7 +229,12 @@ class ViewController: UIViewController {
         checkTextAttributes(everestCMed)
         checkLabelFont(everestCMed)
         setTextAttributes(arial12!, red, button: HelloButton)
+        everestCMed.backgroundColor = UIColor.blue
+        setTextAttributes(aIACondMedium26!, red, label: everestCMed)
+        setTextAttributes(arial10!, red, textView: textview1)
+        setTextAttributes(aIACondMedium26!, red, textField: textfield1)
         
+    
         //        everestCMed.text = "I'm a test label"
     }
     
@@ -205,8 +242,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
     
     
     

@@ -3,112 +3,166 @@
 <plist version="1.0">
 <dict>
 	<key>apptBtn</key>
-	<array>
+	<dict>
+		<key>New item</key>
 		<string>&quot;AIAEverestCondensedMedium&quot;</string>
+		<key>New item - 2</key>
 		<integer>20</integer>
+		<key>New item - 3</key>
 		<string>&quot;White&quot;</string>
-	</array>
+	</dict>
 	<key>apptText</key>
-	<array>
+	<dict>
+		<key>New item</key>
 		<string>&quot;ArialMT&quot;</string>
+		<key>New item - 2</key>
 		<integer>12</integer>
+		<key>New item - 3</key>
 		<string>&quot;B6&quot;</string>
-	</array>
+	</dict>
 	<key>recTitle</key>
-	<array>
+	<dict>
+		<key>New item</key>
 		<string>&quot;AIAEverestCondensedMedium&quot;</string>
+		<key>New item - 2</key>
 		<integer>26</integer>
+		<key>New item - 3</key>
 		<string></string>
-	</array>
+	</dict>
 	<key>recBtn</key>
-	<array>
+	<dict>
+		<key>New item</key>
 		<string>&quot;AIAEverestCondensedMedium&quot;</string>
+		<key>New item - 2</key>
 		<integer>20</integer>
+		<key>New item - 3</key>
 		<string>&quot;White&quot;</string>
-	</array>
+	</dict>
 	<key>recText</key>
-	<array>
+	<dict>
+		<key>New item</key>
 		<string></string>
+		<key>New item - 2</key>
 		<string></string>
+		<key>New item - 3</key>
 		<string></string>
-	</array>
+	</dict>
 	<key>apprText</key>
-	<array>
+	<dict>
+		<key>New item</key>
 		<string></string>
+		<key>New item - 2</key>
 		<string></string>
+		<key>New item - 3</key>
 		<string></string>
-	</array>
+	</dict>
 	<key>apprBtn</key>
-	<array>
+	<dict>
+		<key>New item</key>
 		<string></string>
+		<key>New item - 2</key>
 		<string></string>
+		<key>New item - 3</key>
 		<string></string>
-	</array>
+	</dict>
 	<key>apprTitle</key>
-	<array>
+	<dict>
+		<key>New item</key>
 		<string></string>
+		<key>New item - 2</key>
 		<string></string>
+		<key>New item - 3</key>
 		<string></string>
-	</array>
+	</dict>
 	<key>dayDateMonth</key>
-	<array>
+	<dict>
+		<key>New item</key>
 		<string></string>
+		<key>New item - 2</key>
 		<string></string>
+		<key>New item - 3</key>
 		<string></string>
-	</array>
+	</dict>
 	<key>todayBtn</key>
-	<array>
+	<dict>
+		<key>New item</key>
 		<string></string>
+		<key>New item - 2</key>
 		<string></string>
+		<key>New item - 3</key>
 		<string></string>
-	</array>
+	</dict>
 	<key>contactsBtn</key>
-	<array>
+	<dict>
+		<key>New item</key>
 		<string></string>
+		<key>New item - 2</key>
 		<string></string>
+		<key>New item - 3</key>
 		<string></string>
-	</array>
+	</dict>
 	<key>moduleTitle</key>
-	<array>
+	<dict>
+		<key>New item</key>
 		<string></string>
+		<key>New item - 2</key>
 		<string></string>
+		<key>New item - 3</key>
 		<string>&quot;White&quot;</string>
-	</array>
+	</dict>
 	<key>subTitle</key>
-	<array>
+	<dict>
+		<key>New item</key>
 		<string>&quot;AIAEverestCondensedMedium&quot;</string>
+		<key>New item - 2</key>
 		<integer>26</integer>
+		<key>New item - 3</key>
 		<string></string>
-	</array>
+	</dict>
 	<key>displayDate</key>
-	<array>
+	<dict>
+		<key>New item</key>
 		<string>&quot;ArialMT&quot;</string>
+		<key>New item - 2</key>
 		<integer>60</integer>
+		<key>New item - 3</key>
 		<string></string>
-	</array>
+	</dict>
 	<key>displayDay</key>
-	<array>
+	<dict>
+		<key>New item</key>
 		<string>&quot;ArialMT&quot;</string>
+		<key>New item - 2</key>
 		<integer>12</integer>
+		<key>New item - 3</key>
 		<string></string>
-	</array>
+	</dict>
 	<key>cdarDate</key>
-	<array>
+	<dict>
+		<key>New item</key>
 		<string>&quot;AIAEverestCondensedMedium&quot;</string>
+		<key>New item - 2</key>
 		<integer>16</integer>
+		<key>New item - 3</key>
 		<string>&quot;P2&quot;</string>
-	</array>
+	</dict>
 	<key>cdarTitle</key>
-	<array>
+	<dict>
+		<key>New item</key>
 		<string>&quot;AIAEverestCondensedMedium&quot;</string>
+		<key>New item - 2</key>
 		<integer>26</integer>
+		<key>New item - 3</key>
 		<string></string>
-	</array>
+	</dict>
 	<key>monthYearWeek</key>
-	<array>
+	<dict>
+		<key>New item</key>
 		<string>&quot;ArialMT&quot;</string>
+		<key>New item - 2</key>
 		<integer>16</integer>
+		<key>New item - 3</key>
 		<string></string>
-	</array>
+	</dict>
 </dict>
 </plist>
