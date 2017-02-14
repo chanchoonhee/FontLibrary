@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key></key>
+	<dict>
+		<key>error</key>
+		<string>&quot;Please select a valid color&quot;</string>
+	</dict>
+	<key>Red</key>
+	<dict>
+		<key>Red</key>
+		<real>0.5</real>
+		<key>Green</key>
+		<integer>0</integer>
+		<key>Blue</key>
+		<integer>0</integer>
+		<key>Alpha</key>
+		<integer>1</integer>
+	</dict>
+</dict>
+</plist>
