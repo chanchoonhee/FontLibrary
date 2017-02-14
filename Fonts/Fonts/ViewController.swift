@@ -187,7 +187,9 @@ class ViewController: UIViewController {
      //   setTextAttributes(arial10!, red, textView: textview1)
         setTextAttributes(component: "apptBtn", textField: textfield1)
         print(everestCMed.frame.height)
-        
+        print(textview1.frame.height)
+        print(textfield1.frame.height)
+        print(HelloButton.frame.height)
 //        HelloButton.backgroundColor = UIColor.black
 //        textview1.backgroundColor = UIColor.blue
 //        textfield1.backgroundColor = UIColor.clear
