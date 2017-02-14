@@ -190,6 +190,7 @@ class ViewController: UIViewController {
         print(textview1.frame.height)
         print(textfield1.frame.height)
         print(HelloButton.frame.height)
+        print(HelloButton.frame) //prints (x,y,width,height) values
 //        HelloButton.backgroundColor = UIColor.black
 //        textview1.backgroundColor = UIColor.blue
 //        textfield1.backgroundColor = UIColor.clear
