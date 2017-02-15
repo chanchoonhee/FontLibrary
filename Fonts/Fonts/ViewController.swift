@@ -97,7 +97,7 @@ class ViewController: UIViewController {
         let blue = colorPlist["Blue"] as! Float
         let green = colorPlist["Green"] as! Float
         let alpha = colorPlist["Alpha"] as! Float
-        let color = UIColor(colorLiteralRed: red  , green: green , blue: blue , alpha: alpha)
+        let color = UIColor(colorLiteralRed: red  , green: green , blue: blue , alpha: alpha )
         let attributes: [String:Any] = [
             NSFontAttributeName: font as Any,
             NSForegroundColorAttributeName: color]
@@ -111,15 +111,25 @@ class ViewController: UIViewController {
     /// Sets the text attributes for the UILabel object
     ///
     /// - Parameters:
-    ///   - font:
-    ///   - color: <#color description#>
-    ///   - label: The name of the label
-    func setTextAttributes(_ font: UIFont, _ color: UIColor, label: UILabel){
+    ///   - component: <#component description#>
+    ///   - label: <#label description#>
+    func setTextAttributes(component: String, label: UILabel){
         
         
         let content = label.text
+        let plist = readPropertyList(component1: component)
+        let color1: String = (plist["FontColor"]) as! String
+        let fontType = (plist["FontType"]) as! String
+        let fontSize = (plist["FontSize"]) as! CGFloat
+        let font = UIFont(name: fontType , size: fontSize)
+        let colorPlist = readPropertyList(color: color1)
+        let red = colorPlist["Red"] as! Float
+        let blue = colorPlist["Blue"] as! Float
+        let green = colorPlist["Green"] as! Float
+        let alpha = colorPlist["Alpha"] as! Float
+        let color = UIColor(colorLiteralRed: red  , green: green , blue: blue , alpha: alpha )
         let attributes: [String:Any] = [
-            NSFontAttributeName: font,
+            NSFontAttributeName: font as Any,
             NSForegroundColorAttributeName: color]
         let attributedString = NSMutableAttributedString(string: content!, attributes: attributes)
         label.attributedText = attributedString
@@ -129,13 +139,23 @@ class ViewController: UIViewController {
     /// Sets the text attributes for the UITextView object
     ///
     /// - Parameters:
-    ///   - font: <#font description#>
-    ///   - color: <#color description#>
+    ///   - component: <#component description#>
     ///   - textView: <#textView description#>
-    func setTextAttributes(_ font: UIFont, _ color: UIColor, textView: UITextView ){
+    func setTextAttributes(component: String, textView: UITextView ){
         let content = textView.text
+        let plist = readPropertyList(component1: component)
+        let color1: String = (plist["FontColor"]) as! String
+        let fontType = (plist["FontType"]) as! String
+        let fontSize = (plist["FontSize"]) as! CGFloat
+        let font = UIFont(name: fontType , size: fontSize)
+        let colorPlist = readPropertyList(color: color1)
+        let red = colorPlist["Red"] as! Float
+        let blue = colorPlist["Blue"] as! Float
+        let green = colorPlist["Green"] as! Float
+        let alpha = colorPlist["Alpha"] as! Float
+        let color = UIColor(colorLiteralRed: red  , green: green , blue: blue , alpha: alpha )
         let attributes: [String:Any] = [
-            NSFontAttributeName: font,
+            NSFontAttributeName: font as Any,
             NSForegroundColorAttributeName: color]
         let attributedString = NSMutableAttributedString(string: content!, attributes: attributes)
         textView.attributedText = attributedString
@@ -145,13 +165,23 @@ class ViewController: UIViewController {
     /// Sets the text attributes for the UIButton object
     ///
     /// - Parameters:
-    ///   - font: <#font description#>
-    ///   - color: <#color description#>
+    ///   - component: <#component description#>
     ///   - button: <#button description#>
-    func setTextAttributes(_ font: UIFont, _ color: UIColor, button: UIButton) {
+    func setTextAttributes(component : String, button: UIButton) {
         let content = button.titleLabel
+        let plist = readPropertyList(component1: component)
+        let color1: String = (plist["FontColor"]) as! String
+        let fontType = (plist["FontType"]) as! String
+        let fontSize = (plist["FontSize"]) as! CGFloat
+        let font = UIFont(name: fontType , size: fontSize)
+        let colorPlist = readPropertyList(color: color1)
+        let red = colorPlist["Red"] as! Float
+        let blue = colorPlist["Blue"] as! Float
+        let green = colorPlist["Green"] as! Float
+        let alpha = colorPlist["Alpha"] as! Float
+        let color = UIColor(colorLiteralRed: red  , green: green , blue: blue , alpha: alpha )
         let attributes: [String:Any] = [
-            NSFontAttributeName: font,
+            NSFontAttributeName: font as Any,
             NSForegroundColorAttributeName: color]
         let attributedString = NSMutableAttributedString(string: (content?.text)!, attributes: attributes)
        button.setAttributedTitle(attributedString, for: .normal)
@@ -185,7 +215,7 @@ class ViewController: UIViewController {
 //        everestCMed.backgroundColor = UIColor.blue
 //        setTextAttributes(aIACondMedium26!, red, label: everestCMed)
      //   setTextAttributes(arial10!, red, textView: textview1)
-        setTextAttributes(component: "apptBtn", textField: textfield1)
+        setTextAttributes(component: "apptBtn", button: HelloButton)
         print(everestCMed.frame.height)
         print(textview1.frame.height)
         print(textfield1.frame.height)

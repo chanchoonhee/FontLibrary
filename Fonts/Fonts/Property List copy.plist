@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>apptBtn</key>
+	<dict>
+		<key>FontType</key>
+		<string>AIAEverestCondensedMedium</string>
+		<key>FontSize</key>
+		<integer>20</integer>
+		<key>FontColor</key>
+		<string>Red</string>
+		<key>BackgroundColor</key>
+		<string>P2</string>
+	</dict>
+	<key>apptText</key>
+	<dict>
+		<key>FontType</key>
+		<string>&quot;ArialMT&quot;</string>
+		<key>FontSize</key>
+		<integer>12</integer>
+		<key>FontColor</key>
+		<string></string>
+	</dict>
+	<key>recTitle</key>
+	<dict>
+		<key>Font Type</key>
+		<string>&quot;AIAEverestCondensedMedium&quot;</string>
+		<key>Font Size</key>
+		<integer>26</integer>
+		<key>Font Color</key>
+		<string></string>
+	</dict>
+	<key>recBtn</key>
+	<dict>
+		<key>Font Type</key>
+		<string>UIFont(name: &quot;AIAEverestCondensedMedium&quot;, size: 20)</string>
+		<key>Font Size</key>
+		<integer>20</integer>
+		<key>Font Color</key>
+		<string>&quot;White&quot;</string>
+	</dict>
+	<key>recText</key>
+	<dict>
+		<key>Font Type</key>
+		<string></string>
+		<key>Font Size</key>
+		<string></string>
+		<key>Font Color</key>
+		<string></string>
+	</dict>
+	<key>apprText</key>
+	<dict>
+		<key>Font Type</key>
+		<string></string>
+		<key>Font Size</key>
+		<string></string>
+		<key>Font Color</key>
+		<string></string>
+	</dict>
+	<key>apprBtn</key>
+	<dict>
+		<key>Font Type</key>
+		<string></string>
+		<key>Font Size</key>
+		<string></string>
+		<key>Font Color</key>
+		<string></string>
+	</dict>
+	<key>apprTitle</key>
+	<dict>
+		<key>Font Type</key>
+		<string></string>
+		<key>Font Size</key>
+		<string></string>
+		<key>Font Color</key>
+		<string></string>
+	</dict>
+	<key>dayDateMonth</key>
+	<dict>
+		<key>Font Type</key>
+		<string></string>
+		<key>Font Size</key>
+		<string></string>
+		<key>Font Color</key>
+		<string></string>
+	</dict>
+	<key>todayBtn</key>
+	<dict>
+		<key>Font Type</key>
+		<string></string>
+		<key>Font Size</key>
+		<string></string>
+		<key>Font Color</key>
+		<string></string>
+	</dict>
+	<key>contactsBtn</key>
+	<dict>
+		<key>Font Type</key>
+		<string></string>
+		<key>Font Size</key>
+		<string></string>
+		<key>Font Color</key>
+		<string></string>
+	</dict>
+	<key>moduleTitle</key>
+	<dict>
+		<key>Font Type</key>
+		<string></string>
+		<key>Font Size</key>
+		<string></string>
+		<key>Font Color</key>
+		<string>&quot;White&quot;</string>
+	</dict>
+	<key>subTitle</key>
+	<dict>
+		<key>Font Type</key>
+		<string>&quot;AIAEverestCondensedMedium&quot;</string>
+		<key>Font Size</key>
+		<integer>26</integer>
+		<key>Font Color</key>
+		<string></string>
+	</dict>
+	<key>displayDate</key>
+	<dict>
+		<key>Font Type</key>
+		<string>&quot;ArialMT&quot;</string>
+		<key>Font Size</key>
+		<integer>60</integer>
+		<key>Font Color</key>
+		<string></string>
+	</dict>
+	<key>displayDay</key>
+	<dict>
+		<key>Font Type</key>
+		<string>&quot;ArialMT&quot;</string>
+		<key>Font Size</key>
+		<integer>12</integer>
+		<key>Font Color</key>
+		<string></string>
+	</dict>
+	<key>cdarDate</key>
+	<dict>
+		<key>Font Type</key>
+		<string>&quot;AIAEverestCondensedMedium&quot;</string>
+		<key>Font Size</key>
+		<integer>16</integer>
+		<key>Font Color</key>
+		<string>&quot;P2&quot;</string>
+	</dict>
+	<key>cdarTitle</key>
+	<dict>
+		<key>Font Type</key>
+		<string>&quot;AIAEverestCondensedMedium&quot;</string>
+		<key>Font Size</key>
+		<integer>26</integer>
+		<key>Font Color</key>
+		<string></string>
+	</dict>
+	<key>monthYearWeek</key>
+	<dict>
+		<key>Font Type</key>
+		<string>&quot;ArialMT&quot;</string>
+		<key>Font Size</key>
+		<integer>16</integer>
+		<key>Font Color</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>
