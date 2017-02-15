@@ -4,164 +4,170 @@
 <dict>
 	<key>apptBtn</key>
 	<dict>
-		<key>New item</key>
-		<string>&quot;AIAEverestCondensedMedium&quot;</string>
-		<key>New item - 2</key>
+		<key>FontType</key>
+		<string>AIAEverestCondensedMedium</string>
+		<key>FontSize</key>
 		<integer>20</integer>
-		<key>New item - 3</key>
-		<string>&quot;White&quot;</string>
+		<key>FontColor</key>
+		<string>Red</string>
+		<key>FontGreen</key>
+		<integer>1</integer>
+		<key>FontBlue</key>
+		<integer>0</integer>
+		<key>FontAlpha</key>
+		<real>1</real>
 	</dict>
 	<key>apptText</key>
 	<dict>
-		<key>New item</key>
+		<key>FontType</key>
 		<string>&quot;ArialMT&quot;</string>
-		<key>New item - 2</key>
+		<key>FontSize</key>
 		<integer>12</integer>
-		<key>New item - 3</key>
-		<string>&quot;B6&quot;</string>
+		<key>FontColor</key>
+		<string></string>
 	</dict>
 	<key>recTitle</key>
 	<dict>
-		<key>New item</key>
+		<key>Font Type</key>
 		<string>&quot;AIAEverestCondensedMedium&quot;</string>
-		<key>New item - 2</key>
+		<key>Font Size</key>
 		<integer>26</integer>
-		<key>New item - 3</key>
+		<key>Font Color</key>
 		<string></string>
 	</dict>
 	<key>recBtn</key>
 	<dict>
-		<key>New item</key>
-		<string>&quot;AIAEverestCondensedMedium&quot;</string>
-		<key>New item - 2</key>
+		<key>Font Type</key>
+		<string>UIFont(name: &quot;AIAEverestCondensedMedium&quot;, size: 20)</string>
+		<key>Font Size</key>
 		<integer>20</integer>
-		<key>New item - 3</key>
+		<key>Font Color</key>
 		<string>&quot;White&quot;</string>
 	</dict>
 	<key>recText</key>
 	<dict>
-		<key>New item</key>
+		<key>Font Type</key>
 		<string></string>
-		<key>New item - 2</key>
+		<key>Font Size</key>
 		<string></string>
-		<key>New item - 3</key>
+		<key>Font Color</key>
 		<string></string>
 	</dict>
 	<key>apprText</key>
 	<dict>
-		<key>New item</key>
+		<key>Font Type</key>
 		<string></string>
-		<key>New item - 2</key>
+		<key>Font Size</key>
 		<string></string>
-		<key>New item - 3</key>
+		<key>Font Color</key>
 		<string></string>
 	</dict>
 	<key>apprBtn</key>
 	<dict>
-		<key>New item</key>
+		<key>Font Type</key>
 		<string></string>
-		<key>New item - 2</key>
+		<key>Font Size</key>
 		<string></string>
-		<key>New item - 3</key>
+		<key>Font Color</key>
 		<string></string>
 	</dict>
 	<key>apprTitle</key>
 	<dict>
-		<key>New item</key>
+		<key>Font Type</key>
 		<string></string>
-		<key>New item - 2</key>
+		<key>Font Size</key>
 		<string></string>
-		<key>New item - 3</key>
+		<key>Font Color</key>
 		<string></string>
 	</dict>
 	<key>dayDateMonth</key>
 	<dict>
-		<key>New item</key>
+		<key>Font Type</key>
 		<string></string>
-		<key>New item - 2</key>
+		<key>Font Size</key>
 		<string></string>
-		<key>New item - 3</key>
+		<key>Font Color</key>
 		<string></string>
 	</dict>
 	<key>todayBtn</key>
 	<dict>
-		<key>New item</key>
+		<key>Font Type</key>
 		<string></string>
-		<key>New item - 2</key>
+		<key>Font Size</key>
 		<string></string>
-		<key>New item - 3</key>
+		<key>Font Color</key>
 		<string></string>
 	</dict>
 	<key>contactsBtn</key>
 	<dict>
-		<key>New item</key>
+		<key>Font Type</key>
 		<string></string>
-		<key>New item - 2</key>
+		<key>Font Size</key>
 		<string></string>
-		<key>New item - 3</key>
+		<key>Font Color</key>
 		<string></string>
 	</dict>
 	<key>moduleTitle</key>
 	<dict>
-		<key>New item</key>
+		<key>Font Type</key>
 		<string></string>
-		<key>New item - 2</key>
+		<key>Font Size</key>
 		<string></string>
-		<key>New item - 3</key>
+		<key>Font Color</key>
 		<string>&quot;White&quot;</string>
 	</dict>
 	<key>subTitle</key>
 	<dict>
-		<key>New item</key>
+		<key>Font Type</key>
 		<string>&quot;AIAEverestCondensedMedium&quot;</string>
-		<key>New item - 2</key>
+		<key>Font Size</key>
 		<integer>26</integer>
-		<key>New item - 3</key>
+		<key>Font Color</key>
 		<string></string>
 	</dict>
 	<key>displayDate</key>
 	<dict>
-		<key>New item</key>
+		<key>Font Type</key>
 		<string>&quot;ArialMT&quot;</string>
-		<key>New item - 2</key>
+		<key>Font Size</key>
 		<integer>60</integer>
-		<key>New item - 3</key>
+		<key>Font Color</key>
 		<string></string>
 	</dict>
 	<key>displayDay</key>
 	<dict>
-		<key>New item</key>
+		<key>Font Type</key>
 		<string>&quot;ArialMT&quot;</string>
-		<key>New item - 2</key>
+		<key>Font Size</key>
 		<integer>12</integer>
-		<key>New item - 3</key>
+		<key>Font Color</key>
 		<string></string>
 	</dict>
 	<key>cdarDate</key>
 	<dict>
-		<key>New item</key>
+		<key>Font Type</key>
 		<string>&quot;AIAEverestCondensedMedium&quot;</string>
-		<key>New item - 2</key>
+		<key>Font Size</key>
 		<integer>16</integer>
-		<key>New item - 3</key>
+		<key>Font Color</key>
 		<string>&quot;P2&quot;</string>
 	</dict>
 	<key>cdarTitle</key>
 	<dict>
-		<key>New item</key>
+		<key>Font Type</key>
 		<string>&quot;AIAEverestCondensedMedium&quot;</string>
-		<key>New item - 2</key>
+		<key>Font Size</key>
 		<integer>26</integer>
-		<key>New item - 3</key>
+		<key>Font Color</key>
 		<string></string>
 	</dict>
 	<key>monthYearWeek</key>
 	<dict>
-		<key>New item</key>
+		<key>Font Type</key>
 		<string>&quot;ArialMT&quot;</string>
-		<key>New item - 2</key>
+		<key>Font Size</key>
 		<integer>16</integer>
-		<key>New item - 3</key>
+		<key>Font Color</key>
 		<string></string>
 	</dict>
 </dict>
