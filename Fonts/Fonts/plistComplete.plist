@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>achievement</key>
+	<dict/>
+	<key>activityHours</key>
+	<dict/>
+	<key>activityTime</key>
+	<dict/>
+	<key>activityType</key>
+	<dict/>
+	<key>activityTypeAppr</key>
+	<dict/>
+	<key>activityTypeField</key>
+	<dict/>
+	<key>acitivityTypeNone</key>
+	<dict/>
+	<key>activityTypeOffice</key>
+	<dict/>
+	<key>addAppr</key>
+	<dict/>
+	<key>addApptBtn</key>
+	<dict/>
+	<key>addBtnArw</key>
+	<dict/>
+	<key>addBtnPlus</key>
+	<dict/>
+	<key>addContBtn</key>
+	<dict/>
+	<key>addContPhoto</key>
+	<dict/>
+	<key>apprContThumbnail</key>
+	<dict/>
+	<key>addCustomLabelBtn</key>
+	<dict>
+		<key>New item</key>
+		<string>&quot;AIAEverestCondensedMedium&quot;</string>
+		<key>New item - 2</key>
+		<integer>20</integer>
+		<key>New item - 3</key>
+		<string>&quot;White&quot;</string>
+	</dict>
+	<key>addNewAppr</key>
+	<dict/>
+	<key>addRemoveMembersBtn</key>
+	<dict/>
+	<key>apprBackBtn</key>
+	<dict/>
+	<key>apprCont</key>
+	<dict/>
+	<key>apprContNum</key>
+	<dict/>
+	<key>apprContSn</key>
+	<dict/>
+	<key>apprContStatus</key>
+	<dict/>
+	<key>apprDate</key>
+	<dict/>
+	<key>apprDetails</key>
+	<dict/>
+	<key>apprEditBtn</key>
+	<dict/>
+	<key>apprNextBtn</key>
+	<dict/>
+	<key>apprTitle</key>
+	<dict/>
+	<key>apptApprNotes</key>
+	<dict/>
+	<key>apptApprNotesDate</key>
+	<dict/>
+	<key>apptAttendPrompt</key>
+	<dict/>
+	<key>apptAttendPromptDone</key>
+	<dict/>
+	<key>apptBtn</key>
+	<dict/>
+	<key>apptContSn</key>
+	<dict/>
+	<key>apptDetails</key>
+	<dict/>
+	<key>apptText</key>
+	<dict/>
+	<key>apptTitle</key>
+	<dict/>
+	<key>backBtn</key>
+	<dict>
+		<key>New item</key>
+		<string></string>
+		<key>New item - 2</key>
+		<string></string>
+		<key>New item - 3</key>
+		<string></string>
+	</dict>
+	<key>callstatus</key>
+	<dict/>
+	<key>callstatusOption</key>
+	<dict/>
+	<key>cancelBtn</key>
+	<dict/>
+	<key>cdarBackBtn</key>
+	<dict/>
+	<key>cdarDate</key>
+	<dict/>
+	<key>cdarDay</key>
+	<dict/>
+	<key>cdarNextBtn</key>
+	<dict/>
+	<key>contThumbnail</key>
+	<dict/>
+	<key>cdarTitle</key>
+	<dict/>
+	<key>chartData</key>
+	<dict/>
+	<key>chartNames</key>
+	<dict/>
+	<key>chartTitle</key>
+	<dict/>
+	<key>chartViewBtn</key>
+	<dict/>
+	<key>columnBtm</key>
+	<dict/>
+	<key>columnTop</key>
+	<dict/>
+	<key>contBtn</key>
+	<dict/>
+	<key>contName</key>
+	<dict/>
+	<key>contSn</key>
+	<dict/>
+	<key>contTitle</key>
+	<dict/>
+	<key>dailyNote</key>
+	<dict/>
+	<key>dailyRecPrivateNotes</key>
+	<dict/>
+	<key>dailyRecPublicNotes</key>
+	<dict/>
+	<key>dailyRecRemarks</key>
+	<dict/>
+	<key>dailyRecSBA</key>
+	<dict/>
+	<key>dailyRecSteps</key>
+	<dict/>
+	<key>dailyRecStepsDesc</key>
+	<dict/>
+	<key>dailySumBtn</key>
+	<dict/>
+	<key>date</key>
+	<dict/>
+	<key>dateRange</key>
+	<dict/>
+	<key>dismissBtn</key>
+	<dict/>
+	<key>displayDate</key>
+	<dict/>
+	<key>displayDay</key>
+	<dict/>
+	<key>dayDateMonth</key>
+	<dict/>
+	<key>doneBtn</key>
+	<dict/>
+	<key>editBtn</key>
+	<dict/>
+	<key>exportExcelBtn</key>
+	<dict/>
+	<key>formDetails</key>
+	<dict/>
+	<key>formFillDetails</key>
+	<dict/>
+	<key>formSetDetailsBtn</key>
+	<dict/>
+	<key>graphAxisX</key>
+	<dict/>
+	<key>graphAxisY</key>
+	<dict/>
+	<key>graphLegend</key>
+	<dict/>
+	<key>graphViewBtn</key>
+	<dict/>
+	<key>groupNameCbox</key>
+	<dict/>
+	<key>highlightMemberBtn</key>
+	<dict/>
+	<key>importBtn</key>
+	<dict/>
+	<key>initialsBar</key>
+	<dict>
+		<key>New item</key>
+		<string></string>
+		<key>New item - 2</key>
+		<string></string>
+		<key>New item - 3</key>
+		<string></string>
+	</dict>
+	<key>leftTitle</key>
+	<dict>
+		<key>New item</key>
+		<string></string>
+		<key>New item - 2</key>
+		<string></string>
+		<key>New item - 3</key>
+		<string></string>
+	</dict>
+	<key>listDetails</key>
+	<dict/>
+	<key>memberCheckBox</key>
+	<dict/>
+	<key>memberName</key>
+	<dict/>
+	<key>mobileDetailsField</key>
+	<dict/>
+	<key>moduleTitle</key>
+	<dict/>
+	<key>monthYearWeek</key>
+	<dict/>
+	<key>moreOptionsBtn</key>
+	<dict/>
+	<key>notesLoadMoreBtn</key>
+	<dict/>
+	<key>pendingAppr</key>
+	<dict/>
+	<key>pendingApptPromptBtn</key>
+	<dict>
+		<key>New item</key>
+		<string>&quot;AIAEverestCondensedMedium&quot;</string>
+		<key>New item - 2</key>
+		<integer>20</integer>
+		<key>New item - 3</key>
+		<string>&quot;White&quot;</string>
+	</dict>
+	<key>pendingApptPromptMsg</key>
+	<dict>
+		<key>New item</key>
+		<string>&quot;AIAEverestCondensedMedium&quot;</string>
+		<key>New item - 2</key>
+		<integer>26</integer>
+		<key>New item - 3</key>
+		<string></string>
+	</dict>
+	<key>pendingTaskSubTitle</key>
+	<dict>
+		<key>New item</key>
+		<string></string>
+		<key>New item - 2</key>
+		<string></string>
+		<key>New item - 3</key>
+		<string></string>
+	</dict>
+	<key>pendingTaskTitile</key>
+	<dict>
+		<key>New item</key>
+		<string></string>
+		<key>New item - 2</key>
+		<string></string>
+		<key>New item - 3</key>
+		<string></string>
+	</dict>
+	<key>postcallUpdate</key>
+	<dict>
+		<key>New item</key>
+		<string></string>
+		<key>New item - 2</key>
+		<string></string>
+		<key>New item - 3</key>
+		<string></string>
+	</dict>
+	<key>purposeBtn</key>
+	<dict>
+		<key>New item</key>
+		<string></string>
+		<key>New item - 2</key>
+		<string></string>
+		<key>New item - 3</key>
+		<string></string>
+	</dict>
+	<key>reapprDate</key>
+	<dict>
+		<key>New item</key>
+		<string></string>
+		<key>New item - 2</key>
+		<string></string>
+		<key>New item - 3</key>
+		<string>&quot;White&quot;</string>
+	</dict>
+	<key>recBtn</key>
+	<dict/>
+	<key>recText</key>
+	<dict/>
+	<key>recTime</key>
+	<dict/>
+	<key>recTitle</key>
+	<dict/>
+	<key>recTotalHours</key>
+	<dict/>
+	<key>recTotalWork</key>
+	<dict/>
+	<key>referral</key>
+	<dict/>
+	<key>removeBtnPlus</key>
+	<dict>
+		<key>New item</key>
+		<string>&quot;ArialMT&quot;</string>
+		<key>New item - 2</key>
+		<integer>60</integer>
+		<key>New item - 3</key>
+		<string></string>
+	</dict>
+	<key>removeContBtn</key>
+	<dict/>
+	<key>reportDate</key>
+	<dict/>
+	<key>reportDateBackBtn</key>
+	<dict/>
+	<key>reportSubTabs</key>
+	<dict/>
+	<key>reportTabs</key>
+	<dict/>
+	<key>rescheduleApprBtn</key>
+	<dict>
+		<key>New item</key>
+		<string>&quot;AIAEverestCondensedMedium&quot;</string>
+		<key>New item - 2</key>
+		<integer>16</integer>
+		<key>New item - 3</key>
+		<string>&quot;P2&quot;</string>
+	</dict>
+	<key>rescheduleConfirmationBtn</key>
+	<dict>
+		<key>New item</key>
+		<string>&quot;ArialMT&quot;</string>
+		<key>New item - 2</key>
+		<integer>16</integer>
+		<key>New item - 3</key>
+		<string></string>
+	</dict>
+	<key>rightTitle</key>
+	<dict>
+		<key>New item</key>
+		<string>&quot;AIAEverestCondensedMedium&quot;</string>
+		<key>New item - 2</key>
+		<integer>26</integer>
+		<key>New item - 3</key>
+		<string></string>
+	</dict>
+	<key>searchBar</key>
+	<dict/>
+	<key>selectBtn</key>
+	<dict>
+		<key>New item</key>
+		<string>&quot;AIAEverestCondensedMedium&quot;</string>
+		<key>New item - 2</key>
+		<integer>26</integer>
+		<key>New item - 3</key>
+		<string></string>
+	</dict>
+	<key>selectMobileBtn</key>
+	<dict/>
+	<key>subTitle</key>
+	<dict/>
+	<key>todayBtn</key>
+	<dict/>
+	<key>selectCountryCodeBtn</key>
+	<dict/>
+	<key>setPrimary</key>
+	<dict/>
+	<key>sortingOrderBtn</key>
+	<dict/>
+	<key>sortbyCbox</key>
+	<dict/>
+	<key>title</key>
+	<dict/>
+	<key>updateBtn</key>
+	<dict/>
+	<key>weeklyAchievements</key>
+	<dict/>
+	<key>weeklyGoal</key>
+	<dict>
+		<key>New item</key>
+		<string>&quot;ArialMT&quot;</string>
+		<key>New item - 2</key>
+		<integer>12</integer>
+		<key>New item - 3</key>
+		<string>&quot;B6&quot;</string>
+	</dict>
+</dict>
+</plist>

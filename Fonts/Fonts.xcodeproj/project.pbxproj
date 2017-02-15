@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4629FF501E4D7026001F32C7 /* Cal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4629FF4F1E4D7026001F32C7 /* Cal.swift */; };
-		4629FF521E4DB0BE001F32C7 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4629FF511E4DB0BD001F32C7 /* Property List.plist */; };
+		4629FF521E4DB0BE001F32C7 /* plistComplete.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4629FF511E4DB0BD001F32C7 /* plistComplete.plist */; };
 		4679F2331E51A1680015BAF4 /* AIAEverest-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F22D1E51A1680015BAF4 /* AIAEverest-Bold.ttf */; };
 		4679F2341E51A1680015BAF4 /* AIAEverest-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F22D1E51A1680015BAF4 /* AIAEverest-Bold.ttf */; };
 		4679F2351E51A1680015BAF4 /* AIAEverest-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F22D1E51A1680015BAF4 /* AIAEverest-Bold.ttf */; };
@@ -55,7 +55,7 @@
 
 /* Begin PBXFileReference section */
 		4629FF4F1E4D7026001F32C7 /* Cal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cal.swift; sourceTree = "<group>"; };
-		4629FF511E4DB0BD001F32C7 /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		4629FF511E4DB0BD001F32C7 /* plistComplete.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = plistComplete.plist; sourceTree = "<group>"; };
 		4679F22D1E51A1680015BAF4 /* AIAEverest-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AIAEverest-Bold.ttf"; sourceTree = "<group>"; };
 		4679F22E1E51A1680015BAF4 /* AIAEverest-Condensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AIAEverest-Condensed.ttf"; sourceTree = "<group>"; };
 		4679F22F1E51A1680015BAF4 /* AIAEverest-CondensedMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AIAEverest-CondensedMedium.ttf"; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 				468397C21E42EC0100249442 /* LaunchScreen.storyboard */,
 				468397C51E42EC0100249442 /* Info.plist */,
 				4629FF4F1E4D7026001F32C7 /* Cal.swift */,
-				4629FF511E4DB0BD001F32C7 /* Property List.plist */,
+				4629FF511E4DB0BD001F32C7 /* plistComplete.plist */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -282,7 +282,7 @@
 				468397C11E42EC0100249442 /* Assets.xcassets in Resources */,
 				4679F2421E51A1680015BAF4 /* AIAEverest-Regular.ttf in Resources */,
 				4679F2361E51A1680015BAF4 /* AIAEverest-Condensed.ttf in Resources */,
-				4629FF521E4DB0BE001F32C7 /* Property List.plist in Resources */,
+				4629FF521E4DB0BE001F32C7 /* plistComplete.plist in Resources */,
 				468397BF1E42EC0100249442 /* Main.storyboard in Resources */,
 				4679F2391E51A1680015BAF4 /* AIAEverest-CondensedMedium.ttf in Resources */,
 				4679F23C1E51A1680015BAF4 /* AIAEverest-ExtraBold.ttf in Resources */,
