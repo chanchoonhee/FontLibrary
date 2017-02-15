@@ -8,39 +8,24 @@
 
 import UIKit
 
-//let path = Bundle.main.path(forResource: "Property List", ofType: "plist")!
-//let url = URL(fileURLWithPath: path)
-//let data = try! Data(contentsOf: url)
-//let plist = try! PropertyListSerialization.propertyList(from: data, options: .mutableContainers, format: nil)
-//
-//let dictArray = plist as! Dictionary<String, Dictionary<String, Any>>
+
 let screenSize = UIScreen.main.bounds
 let screenWidth = screenSize.width
 let screenHeight = screenSize.height
 
-
-func checkScreenSize(size: CGSize) {
-    print(screenWidth*(size.width/100), screenHeight*(size.height/100))
-}
-let sizetest  = CGSize(width: 10.0, height: 50.0)
-
 class ViewController: UIViewController {
 
-
+   
     @IBAction func ColorMe(_ sender: Any) {
         print("HelloWorld")
     }
     @IBOutlet weak var textview1: UITextView!
     @IBOutlet weak var textfield1: UITextField!
     @IBOutlet weak var HelloButton: UIButton!
- 
-    
-  
-    
-
     @IBOutlet weak var everestCMed: UILabel!
     @IBOutlet weak var everestBOLD: UILabel!
-    
+    let errDict : [String:String] = ["Nil":"The function returned a nil value while unwrapping optionals"]
+
 
     /// Checks the font of the label and prints the font details
     ///
@@ -79,7 +64,7 @@ class ViewController: UIViewController {
   
     
     
-    /// Sets the text attributes for UITextField object
+    /// Sets the text attributes for UITextField object e.g. font color, font size, font type, and background color
     ///
     /// - Parameters:
     ///   - component: Name of component
@@ -214,6 +199,21 @@ class ViewController: UIViewController {
         let alphaBg = bgColorPlist["Alpha"] as! Float
         button.backgroundColor = UIColor(colorLiteralRed: redBg  , green: greenBg , blue: blueBg , alpha: alphaBg )
     }
+    
+    func checkScreenSize(component: String) -> NSDictionary {
+        let sizePlist = readPropertyList(componentSize: component)
+        let hpct = (sizePlist["cWidth"]) as! CGFloat
+        let wpct = (sizePlist["cHeight"]) as! CGFloat
+        let cWidth = (hpct/100 * screenHeight )
+        let cHeight = (wpct/100 * screenWidth )
+        let size:[String: CGFloat] = ["width" : cWidth , "height" : cHeight]
+        print(size)
+        print("\(screenHeight), \(screenWidth)")
+        return size as NSDictionary
+
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -249,7 +249,8 @@ class ViewController: UIViewController {
         print(textfield1.frame.height)
         print(HelloButton.frame.height)
         print(HelloButton.frame) //prints (x,y,width,height) values
-        HelloButton.frame = UIView.
+        HelloButton.frame = CGRect(x: 100, y: 100, width: 100, height: 30)
+        checkScreenSize(component: "apptBtn")
 //        HelloButton.backgroundColor = UIColor.black
 //        textview1.backgroundColor = UIColor.blue
 //        textfield1.backgroundColor = UIColor.clear
@@ -264,6 +265,29 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func readPropertyList(componentSize: String)-> NSDictionary{
+        var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml //Format of the Property List.
+        var plistData: [String: [String: AnyObject]] = [:] //Our data
+        let plistPath: String? = Bundle.main.path(forResource: "ComponentSize", ofType: "plist")! //the path of the data
+        let plistXML = FileManager.default.contents(atPath: plistPath!)!
+        do {//convert the data to a dictionary and handle errors.
+            plistData = try PropertyListSerialization.propertyList(from: plistXML, options: .mutableContainersAndLeaves, format: &propertyListFormat) as! [String: [String:AnyObject]]
+            //            print(data1["FontColor"]!)
+            
+        } catch {
+            print("Error reading plist: \(error), format: \(propertyListFormat)")
+            
+        }
+        let sizeDict = plistData["\(componentSize)"]!
+            return sizeDict as NSDictionary
+        
+    }
+            
+        
+        
+        
+    
     
     func readPropertyList(color: String)-> NSDictionary{
         var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml //Format of the Property List.
