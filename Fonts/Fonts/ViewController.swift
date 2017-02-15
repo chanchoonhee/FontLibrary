@@ -103,6 +103,13 @@ class ViewController: UIViewController {
             NSForegroundColorAttributeName: color]
         let attributedString = NSMutableAttributedString(string: content!, attributes: attributes)
         textField.attributedText = attributedString
+        let bgdColor : String = (plist["BackgroundColor"]) as! String
+        let bgColorPlist = readPropertyList(color: bgdColor)
+        let redBg = bgColorPlist["Red"] as! Float
+        let blueBg = bgColorPlist["Blue"] as! Float
+        let greenBg = bgColorPlist["Green"] as! Float
+        let alphaBg = bgColorPlist["Alpha"] as! Float
+        textField.backgroundColor = UIColor(colorLiteralRed: redBg  , green: greenBg , blue: blueBg , alpha: alphaBg )
         
     }
 
@@ -133,6 +140,13 @@ class ViewController: UIViewController {
             NSForegroundColorAttributeName: color]
         let attributedString = NSMutableAttributedString(string: content!, attributes: attributes)
         label.attributedText = attributedString
+        let bgdColor : String = (plist["BackgroundColor"]) as! String
+        let bgColorPlist = readPropertyList(color: bgdColor)
+        let redBg = bgColorPlist["Red"] as! Float
+        let blueBg = bgColorPlist["Blue"] as! Float
+        let greenBg = bgColorPlist["Green"] as! Float
+        let alphaBg = bgColorPlist["Alpha"] as! Float
+        label.backgroundColor = UIColor(colorLiteralRed: redBg  , green: greenBg , blue: blueBg , alpha: alphaBg )
         
         
     }
@@ -159,6 +173,13 @@ class ViewController: UIViewController {
             NSForegroundColorAttributeName: color]
         let attributedString = NSMutableAttributedString(string: content!, attributes: attributes)
         textView.attributedText = attributedString
+        let bgdColor : String = (plist["BackgroundColor"]) as! String
+        let bgColorPlist = readPropertyList(color: bgdColor)
+        let redBg = bgColorPlist["Red"] as! Float
+        let blueBg = bgColorPlist["Blue"] as! Float
+        let greenBg = bgColorPlist["Green"] as! Float
+        let alphaBg = bgColorPlist["Alpha"] as! Float
+        textView.backgroundColor = UIColor(colorLiteralRed: redBg  , green: greenBg , blue: blueBg , alpha: alphaBg )
         
     }
     
@@ -185,6 +206,13 @@ class ViewController: UIViewController {
             NSForegroundColorAttributeName: color]
         let attributedString = NSMutableAttributedString(string: (content?.text)!, attributes: attributes)
        button.setAttributedTitle(attributedString, for: .normal)
+        let bgdColor : String = (plist["BackgroundColor"]) as! String
+        let bgColorPlist = readPropertyList(color: bgdColor)
+        let redBg = bgColorPlist["Red"] as! Float
+        let blueBg = bgColorPlist["Blue"] as! Float
+        let greenBg = bgColorPlist["Green"] as! Float
+        let alphaBg = bgColorPlist["Alpha"] as! Float
+        button.backgroundColor = UIColor(colorLiteralRed: redBg  , green: greenBg , blue: blueBg , alpha: alphaBg )
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -221,6 +249,7 @@ class ViewController: UIViewController {
         print(textfield1.frame.height)
         print(HelloButton.frame.height)
         print(HelloButton.frame) //prints (x,y,width,height) values
+        HelloButton.frame = UIView.
 //        HelloButton.backgroundColor = UIColor.black
 //        textview1.backgroundColor = UIColor.blue
 //        textfield1.backgroundColor = UIColor.clear
@@ -257,7 +286,7 @@ class ViewController: UIViewController {
     func readPropertyList(component1: String)-> NSDictionary{
         var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml //Format of the Property List.
         var plistData: [String: [String: AnyObject]] = [:] //Our data
-        let plistPath: String? = Bundle.main.path(forResource: "Property List", ofType: "plist")! //the path of the data
+        let plistPath: String? = Bundle.main.path(forResource: "Property List1", ofType: "plist")! //the path of the data
         let plistXML = FileManager.default.contents(atPath: plistPath!)!
         do {//convert the data to a dictionary and handle errors.
             plistData = try PropertyListSerialization.propertyList(from: plistXML, options: .mutableContainersAndLeaves, format: &propertyListFormat) as! [String: [String:AnyObject]]
