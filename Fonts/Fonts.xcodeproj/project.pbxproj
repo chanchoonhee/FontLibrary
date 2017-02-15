@@ -34,6 +34,7 @@
 		468397C41E42EC0100249442 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468397C21E42EC0100249442 /* LaunchScreen.storyboard */; };
 		468397CF1E42EC0200249442 /* FontsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468397CE1E42EC0200249442 /* FontsTests.swift */; };
 		468397DA1E42EC0200249442 /* FontsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468397D91E42EC0200249442 /* FontsUITests.swift */; };
+		468B9ADC1E53FC7A00B4F1D4 /* Property List1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 468B9ADB1E53FC7A00B4F1D4 /* Property List1.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		468397D51E42EC0200249442 /* FontsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		468397D91E42EC0200249442 /* FontsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsUITests.swift; sourceTree = "<group>"; };
 		468397DB1E42EC0200249442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		468B9ADB1E53FC7A00B4F1D4 /* Property List1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List1.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				468397C21E42EC0100249442 /* LaunchScreen.storyboard */,
 				468397C51E42EC0100249442 /* Info.plist */,
 				4629FF4F1E4D7026001F32C7 /* Cal.swift */,
+				468B9ADB1E53FC7A00B4F1D4 /* Property List1.plist */,
 				4629FF511E4DB0BD001F32C7 /* plistComplete.plist */,
 			);
 			path = Fonts;
@@ -276,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468B9ADC1E53FC7A00B4F1D4 /* Property List1.plist in Resources */,
 				4679F23F1E51A1680015BAF4 /* AIAEverest-Medium.ttf in Resources */,
 				4679F2331E51A1680015BAF4 /* AIAEverest-Bold.ttf in Resources */,
 				468397C41E42EC0100249442 /* LaunchScreen.storyboard in Resources */,
