@@ -631,23 +631,6 @@
 		<key>BackgroundColorSelected</key>
 		<string></string>
 	</dict>
-	<key>apprContThumbnail</key>
-	<dict>
-		<key>FontType</key>
-		<string></string>
-		<key>FontTypeSelected</key>
-		<string></string>
-		<key>FontSize</key>
-		<integer>0</integer>
-		<key>FontColor</key>
-		<string></string>
-		<key>FontColorSelected</key>
-		<string></string>
-		<key>BackgroundColor</key>
-		<string></string>
-		<key>BackgroundColorSelected</key>
-		<string></string>
-	</dict>
 	<key>apprDate</key>
 	<dict>
 		<key>FontType</key>
@@ -767,7 +750,7 @@
 		<key>BackgroundColorSelected</key>
 		<string></string>
 	</dict>
-	<key>apptAttendPrompt</key>
+	<key>apptPrompt</key>
 	<dict>
 		<key>FontType</key>
 		<string>ArialMT</string>
@@ -784,7 +767,7 @@
 		<key>BackgroundColorSelected</key>
 		<string></string>
 	</dict>
-	<key>apptAttendPromptDone</key>
+	<key>apptPromptDone</key>
 	<dict>
 		<key>FontType</key>
 		<string>ArialMT</string>
