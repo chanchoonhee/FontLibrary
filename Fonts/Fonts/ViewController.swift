@@ -16,6 +16,7 @@ let screenHeight = screenSize.height
 class ViewController: UIViewController {
 
    
+   
     @IBAction func ColorMe(_ sender: Any) {
         print("HelloWorld")
     }
@@ -24,77 +25,46 @@ class ViewController: UIViewController {
     @IBOutlet weak var HelloButton: UIButton!
     @IBOutlet weak var everestCMed: UILabel!
     @IBOutlet weak var everestBOLD: UILabel!
-    let errDict : [String:String] = ["Nil":"The function returned a nil value while unwrapping optionals"]
-
-
-    /// Checks the font of the label and prints the font details
-    ///
-    /// - Parameter textFont: The text from the label
     
-    func checkLabelFont (_ textFont: (UILabel)) {
-        print((textFont.font)!)
-        
-    }
-    /// Checks the font of the text field and prints the font details
-    ///
-    /// - Parameter textFont: The text from the text field
-    func checkTextFieldFont (_ textFont: (UITextField)) {
-        print((textFont.font)!)
-        
-    }
-    /// Checks the font of the text view and prints the font details
-    ///
-    /// - Parameter textFont: The text from the text view
-    func checkTextViewFont (_ textFont: (UITextView)) {
-        print((textFont.font)!)
-        
-    }
-    /// Prints the font details of the font type
-    ///
-    /// - Parameter fontType: The font used in sections, menu, buttons
-    func checkFontDetails (_ fontType: (UIFont)) {
-        print(fontType)
-        
-    }
-    
+  
+  
+
     func checkTextAttributes(_ label: UILabel){
         print(label.attributedText!)
         
     }
   
-    
-    
     /// Sets the text attributes for UITextField object e.g. font color, font size, font type, and background color
     ///
     /// - Parameters:
     ///   - component: Name of component
     ///   - textField: The text field object
-    func setTextAttributes(component: String, textField: UITextField ){
+    func setTextAttributes(component: String, textField: UITextField, isSelected : Bool?){
         
         let content = textField.text
         let plist = readPropertyList(component1: component)
-        let color1: String = (plist["FontColor"]) as! String
-        let fontType = (plist["FontType"]) as! String
-        let fontSize = (plist["FontSize"]) as! CGFloat
+        var fColor : String = "Black"
+        var fontType : String = "ArialMT"
+        var fontSize : CGFloat = 12
+        if isSelected! {
+            fColor = (plist["FontColorSelected"]) as! String
+            if let haveFontSelected = (plist["FontTypeSelected"]){
+               fontType = haveFontSelected as! String
+                fontSize = (plist["FontSize"]) as! CGFloat
+            }
+        }else{
+            fColor = (plist["FontColor"]) as! String
+            fontType = (plist["FontType"]) as! String
+            fontSize = (plist["FontSize"]) as! CGFloat
+        }
         let font = UIFont(name: fontType , size: fontSize)
-        let colorPlist = readPropertyList(color: color1)
-        let red = colorPlist["Red"] as! Float
-        let blue = colorPlist["Blue"] as! Float
-        let green = colorPlist["Green"] as! Float
-        let alpha = colorPlist["Alpha"] as! Float
-        let color = UIColor(colorLiteralRed: red  , green: green , blue: blue , alpha: alpha )
+        let color = getUIColor(colorName: fColor)
         let attributes: [String:Any] = [
             NSFontAttributeName: font as Any,
             NSForegroundColorAttributeName: color]
         let attributedString = NSMutableAttributedString(string: content!, attributes: attributes)
         textField.attributedText = attributedString
-        let bgdColor : String = (plist["BackgroundColor"]) as! String
-        let bgColorPlist = readPropertyList(color: bgdColor)
-        let redBg = bgColorPlist["Red"] as! Float
-        let blueBg = bgColorPlist["Blue"] as! Float
-        let greenBg = bgColorPlist["Green"] as! Float
-        let alphaBg = bgColorPlist["Alpha"] as! Float
-        textField.backgroundColor = UIColor(colorLiteralRed: redBg  , green: greenBg , blue: blueBg , alpha: alphaBg )
+       
         
     }
 
@@ -105,34 +75,34 @@ class ViewController: UIViewController {
     /// - Parameters:
     ///   - component: <#component description#>
     ///   - label: <#label description#>
-    func setTextAttributes(component: String, label: UILabel){
+    func setTextAttributes(component: String, label: UILabel, isSelected : Bool?){
         
         
         let content = label.text
         let plist = readPropertyList(component1: component)
-        let color1: String = (plist["FontColor"]) as! String
-        let fontType = (plist["FontType"]) as! String
-        let fontSize = (plist["FontSize"]) as! CGFloat
+        var fColor : String = "Black"
+        var fontType : String = "ArialMT"
+        var fontSize : CGFloat = 12
+        if isSelected! {
+            fColor = (plist["FontColorSelected"]) as! String
+            if let haveFontSelected = (plist["FontTypeSelected"]){
+                fontType = haveFontSelected as! String
+                fontSize = (plist["FontSize"]) as! CGFloat
+            }
+        }else{
+            fColor = (plist["FontColor"]) as! String
+            fontType = (plist["FontType"]) as! String
+            fontSize = (plist["FontSize"]) as! CGFloat
+        }
         let font = UIFont(name: fontType , size: fontSize)
-        let colorPlist = readPropertyList(color: color1)
-        let red = colorPlist["Red"] as! Float
-        let blue = colorPlist["Blue"] as! Float
-        let green = colorPlist["Green"] as! Float
-        let alpha = colorPlist["Alpha"] as! Float
-        let color = UIColor(colorLiteralRed: red  , green: green , blue: blue , alpha: alpha )
+        let color = getUIColor(colorName: fColor)
         let attributes: [String:Any] = [
             NSFontAttributeName: font as Any,
             NSForegroundColorAttributeName: color]
         let attributedString = NSMutableAttributedString(string: content!, attributes: attributes)
         label.attributedText = attributedString
-        let bgdColor : String = (plist["BackgroundColor"]) as! String
-        let bgColorPlist = readPropertyList(color: bgdColor)
-        let redBg = bgColorPlist["Red"] as! Float
-        let blueBg = bgColorPlist["Blue"] as! Float
-        let greenBg = bgColorPlist["Green"] as! Float
-        let alphaBg = bgColorPlist["Alpha"] as! Float
-        label.backgroundColor = UIColor(colorLiteralRed: redBg  , green: greenBg , blue: blueBg , alpha: alphaBg )
-        
+
+       
         
     }
     /// Sets the text attributes for the UITextView object
@@ -140,31 +110,30 @@ class ViewController: UIViewController {
     /// - Parameters:
     ///   - component: <#component description#>
     ///   - textView: <#textView description#>
-    func setTextAttributes(component: String, textView: UITextView ){
+    func setTextAttributes(component: String, textView: UITextView, isSelected : Bool? ){
         let content = textView.text
         let plist = readPropertyList(component1: component)
-        let color1: String = (plist["FontColor"]) as! String
-        let fontType = (plist["FontType"]) as! String
-        let fontSize = (plist["FontSize"]) as! CGFloat
+        var fColor : String = "Black"
+        var fontType : String = "ArialMT"
+        var fontSize : CGFloat = 12
+        if isSelected! {
+            fColor = (plist["FontColorSelected"]) as! String
+            if let haveFontSelected = (plist["FontTypeSelected"]){
+                fontType = haveFontSelected as! String
+                fontSize = (plist["FontSize"]) as! CGFloat
+            }
+        }else{
+            fColor = (plist["FontColor"]) as! String
+            fontType = (plist["FontType"]) as! String
+            fontSize = (plist["FontSize"]) as! CGFloat
+        }
         let font = UIFont(name: fontType , size: fontSize)
-        let colorPlist = readPropertyList(color: color1)
-        let red = colorPlist["Red"] as! Float
-        let blue = colorPlist["Blue"] as! Float
-        let green = colorPlist["Green"] as! Float
-        let alpha = colorPlist["Alpha"] as! Float
-        let color = UIColor(colorLiteralRed: red  , green: green , blue: blue , alpha: alpha )
+        let color = getUIColor(colorName: fColor)
         let attributes: [String:Any] = [
             NSFontAttributeName: font as Any,
             NSForegroundColorAttributeName: color]
         let attributedString = NSMutableAttributedString(string: content!, attributes: attributes)
         textView.attributedText = attributedString
-        let bgdColor : String = (plist["BackgroundColor"]) as! String
-        let bgColorPlist = readPropertyList(color: bgdColor)
-        let redBg = bgColorPlist["Red"] as! Float
-        let blueBg = bgColorPlist["Blue"] as! Float
-        let greenBg = bgColorPlist["Green"] as! Float
-        let alphaBg = bgColorPlist["Alpha"] as! Float
-        textView.backgroundColor = UIColor(colorLiteralRed: redBg  , green: greenBg , blue: blueBg , alpha: alphaBg )
         
     }
     
@@ -173,92 +142,100 @@ class ViewController: UIViewController {
     /// - Parameters:
     ///   - component: <#component description#>
     ///   - button: <#button description#>
-    func setTextAttributes(component : String, button: UIButton) {
+    func setTextAttributes(component : String, button: UIButton, isSelected : Bool?)  {
         let content = button.titleLabel
-        let plist = readPropertyList(component1: component)
-        let color1: String = (plist["FontColor"]) as! String
-        let fontType = (plist["FontType"]) as! String
-        let fontSize = (plist["FontSize"]) as! CGFloat
+        let plist =  readPropertyList(component1: component)
+        var fColor : String = "Black"
+        var fontType : String = "ArialMT"
+        var fontSize : CGFloat = 12
+        if isSelected! {
+            fColor = (plist["FontColorSelected"]) as! String
+            if let haveFontSelected = (plist["FontTypeSelected"]){
+                fontType = haveFontSelected as! String
+                fontSize = (plist["FontSize"]) as! CGFloat
+            }
+        }else{
+            fColor = (plist["FontColor"]) as! String
+            fontType = (plist["FontType"]) as! String
+            fontSize = (plist["FontSize"]) as! CGFloat
+        }
         let font = UIFont(name: fontType , size: fontSize)
-        let colorPlist = readPropertyList(color: color1)
-        let red = colorPlist["Red"] as! Float
-        let blue = colorPlist["Blue"] as! Float
-        let green = colorPlist["Green"] as! Float
-        let alpha = colorPlist["Alpha"] as! Float
-        let color = UIColor(colorLiteralRed: red  , green: green , blue: blue , alpha: alpha )
+        let color = getUIColor(colorName: fColor)
         let attributes: [String:Any] = [
             NSFontAttributeName: font as Any,
             NSForegroundColorAttributeName: color]
         let attributedString = NSMutableAttributedString(string: (content?.text)!, attributes: attributes)
        button.setAttributedTitle(attributedString, for: .normal)
-        let bgdColor : String = (plist["BackgroundColor"]) as! String
-        let bgColorPlist = readPropertyList(color: bgdColor)
-        let redBg = bgColorPlist["Red"] as! Float
-        let blueBg = bgColorPlist["Blue"] as! Float
-        let greenBg = bgColorPlist["Green"] as! Float
-        let alphaBg = bgColorPlist["Alpha"] as! Float
-        button.backgroundColor = UIColor(colorLiteralRed: redBg  , green: greenBg , blue: blueBg , alpha: alphaBg )
+        if let bgdColor : String = (plist["BackgroundColor"]) as? String{
+        let bkdcolor = getUIColor(colorName: bgdColor)
+            button.backgroundColor = bkdcolor
+        }
+        
     }
     
-    func checkScreenSize(component: String) -> NSDictionary {
+    /// Gets the component size in percentage from the plist and converts it into pixels
+    ///
+    /// - Parameter component: The component which the size is to be obtained
+    /// - Returns: Returns the width and size in a tuple which can be accessed by e.g. width = size.0, height = size.1
+    func getComponentSize(component: String) -> (width: CGFloat, height: CGFloat) {
         let sizePlist = readPropertyList(componentSize: component)
         let hpct = (sizePlist["cWidth"]) as! CGFloat
         let wpct = (sizePlist["cHeight"]) as! CGFloat
         let cWidth = (hpct/100 * screenHeight )
         let cHeight = (wpct/100 * screenWidth )
-        let size:[String: CGFloat] = ["width" : cWidth , "height" : cHeight]
+        let size = (width : cWidth , height : cHeight)
         print(size)
         print("\(screenHeight), \(screenWidth)")
-        return size as NSDictionary
+       return size
 
     }
+    /// Retrieves the UIColor object based on the RGBA values from the plist
+    ///
+    /// - Parameter color1: The color name
+    /// - Returns: UIColor object loaded with the RGBA Values
+    func getUIColor(colorName : String)-> UIColor {
+        let colorPlist =  readPropertyList(color: colorName)
+        let red = colorPlist["Red"] as! Float
+        let blue = colorPlist["Blue"] as! Float
+        let green = colorPlist["Green"] as! Float
+        let alpha = colorPlist["Alpha"] as! Float
+        let color = UIColor(colorLiteralRed: red  , green: green , blue: blue , alpha: alpha )
+        return color as UIColor
+    }
+    
+    func printAttributes(component: String){
+        let plist =  readPropertyList(component1: component)
+        let fColor = (plist["FontColor"]) as! String
+        let fontType = (plist["FontType"]) as! String
+        let fontSize = (plist["FontSize"]) as! CGFloat
+        var attributes = "Font color : \(fColor), Font Type: \(fontType), Font Size:\(fontSize)"
+        if let bgdColor : String = ((plist["BackgroundColor"]) as? String){
+            attributes += ", Background Color: \(bgdColor)"
+        }
+        if let selected : String = ((plist["FontColorSelected"]) as? String){
+            attributes += ", isSelected: \(selected)"
+        }
+        
+        print(attributes)
+    }
+//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as CustomTableViewCell
+//        l
+//    
+//    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-        
-        //        everestCMed.font = setFont(.arial12)
-        //        everestBOLD.font = setFont(.arialBold12)
-        //        for familynames in UIFont.familyNames{
-        //            for fonts in UIFont.fontNames(forFamilyName: familynames) {
-        //                print(fonts)
-        //
-        //            }
-        //        }
-        
-        //        everestCMed.font = setFont(.aIACondMedium16)
-        //        checkFontDetails(everestCMed.font)
-        
-//        setTextAttributes(arial60!, red, button: HelloButton)
-        
-//        readPropertyList(component: "apptBtn")
-        
-        
-//        checkTextAttributes(everestCMed)
-//        checkLabelFont(everestCMed)
-//        setTextAttributes(arial12!, red, button: HelloButton)
-//        everestCMed.backgroundColor = UIColor.blue
-//        setTextAttributes(aIACondMedium26!, red, label: everestCMed)
-     //   setTextAttributes(arial10!, red, textView: textview1)
-        setTextAttributes(component: "apptBtn", button: HelloButton)
-        print(everestCMed.frame.height)
-        print(textview1.frame.height)
-        print(textfield1.frame.height)
-        print(HelloButton.frame.height)
+        setTextAttributes(component: "apptBtn", button: HelloButton, isSelected: false)
+        setTextAttributes(component: "apptText", textField:textfield1 , isSelected: false)
         print(HelloButton.frame) //prints (x,y,width,height) values
         HelloButton.frame = CGRect(x: 100, y: 100, width: 100, height: 30)
-        checkScreenSize(component: "apptBtn")
-//        HelloButton.backgroundColor = UIColor.black
-//        textview1.backgroundColor = UIColor.blue
-//        textfield1.backgroundColor = UIColor.clear
-//        everestCMed.backgroundColor = UIColor.yellow
-        
-        
-    
-        //        everestCMed.text = "I'm a test label"
+        getComponentSize(component: "apptBtn")
+        printAttributes(component: "apptText")
+//        setTextAttributes(component: "apptText", label:tbView , isSelected: false)
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -289,7 +266,7 @@ class ViewController: UIViewController {
         
     
     
-    func readPropertyList(color: String)-> NSDictionary{
+    func readPropertyList(color: String)  -> NSDictionary{
         var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml //Format of the Property List.
         var plistData: [String: [String: AnyObject]] = [:] //Our data
         let plistPath: String? = Bundle.main.path(forResource: "Colors", ofType: "plist")! //the path of the data
@@ -303,8 +280,9 @@ class ViewController: UIViewController {
             
         }
         let colorDict = plistData["\(color)"]!
-        return colorDict as NSDictionary
+            
         
+        return colorDict as NSDictionary
     }
     
     func readPropertyList(component1: String)-> NSDictionary{

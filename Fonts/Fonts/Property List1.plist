@@ -16,11 +16,11 @@
 	<key>apptText</key>
 	<dict>
 		<key>FontType</key>
-		<string>&quot;ArialMT&quot;</string>
+		<string>AIAEverestCondensedMedium</string>
 		<key>FontSize</key>
-		<integer>12</integer>
+		<integer>40</integer>
 		<key>FontColor</key>
-		<string></string>
+		<string>P2</string>
 	</dict>
 	<key>recTitle</key>
 	<dict>
