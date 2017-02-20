@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09521BF71E56D9AE00793783 /* WidthHeight.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09521BF61E56D9AE00793783 /* WidthHeight.plist */; };
 		4629FF501E4D7026001F32C7 /* Cal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4629FF4F1E4D7026001F32C7 /* Cal.swift */; };
-		4629FF521E4DB0BE001F32C7 /* plistComplete.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4629FF511E4DB0BD001F32C7 /* plistComplete.plist */; };
+		4629FF521E4DB0BE001F32C7 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4629FF511E4DB0BD001F32C7 /* Property List.plist */; };
 		4679F2331E51A1680015BAF4 /* AIAEverest-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F22D1E51A1680015BAF4 /* AIAEverest-Bold.ttf */; };
 		4679F2341E51A1680015BAF4 /* AIAEverest-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F22D1E51A1680015BAF4 /* AIAEverest-Bold.ttf */; };
 		4679F2351E51A1680015BAF4 /* AIAEverest-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F22D1E51A1680015BAF4 /* AIAEverest-Bold.ttf */; };
@@ -28,14 +27,14 @@
 		4679F2421E51A1680015BAF4 /* AIAEverest-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F2321E51A1680015BAF4 /* AIAEverest-Regular.ttf */; };
 		4679F2431E51A1680015BAF4 /* AIAEverest-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F2321E51A1680015BAF4 /* AIAEverest-Regular.ttf */; };
 		4679F2441E51A1680015BAF4 /* AIAEverest-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F2321E51A1680015BAF4 /* AIAEverest-Regular.ttf */; };
+		467C03A31E5300DE00253071 /* Colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 467C03A21E5300DE00253071 /* Colors.plist */; };
 		468397BA1E42EBFF00249442 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468397B91E42EBFF00249442 /* AppDelegate.swift */; };
 		468397BC1E42EBFF00249442 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468397BB1E42EBFF00249442 /* ViewController.swift */; };
 		468397BF1E42EC0100249442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468397BD1E42EC0000249442 /* Main.storyboard */; };
 		468397C11E42EC0100249442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 468397C01E42EC0100249442 /* Assets.xcassets */; };
 		468397C41E42EC0100249442 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468397C21E42EC0100249442 /* LaunchScreen.storyboard */; };
-		468B9ADC1E53FC7A00B4F1D4 /* Property List1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 468B9ADB1E53FC7A00B4F1D4 /* Property List1.plist */; };
-		468B9ADE1E53FE2E00B4F1D4 /* Colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 468B9ADD1E53FE2E00B4F1D4 /* Colors.plist */; };
-		468B9AE01E54140200B4F1D4 /* ComponentSize.plist in Resources */ = {isa = PBXBuildFile; fileRef = 468B9ADF1E54140200B4F1D4 /* ComponentSize.plist */; };
+		468397CF1E42EC0200249442 /* FontsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468397CE1E42EC0200249442 /* FontsTests.swift */; };
+		468397DA1E42EC0200249442 /* FontsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468397D91E42EC0200249442 /* FontsUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,27 +55,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09521BF31E569B2900793783 /* Fonts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fonts.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		09521BF41E569B2900793783 /* FontsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		09521BF51E569B2900793783 /* FontsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		09521BF61E56D9AE00793783 /* WidthHeight.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WidthHeight.plist; sourceTree = "<group>"; };
 		4629FF4F1E4D7026001F32C7 /* Cal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cal.swift; sourceTree = "<group>"; };
-		4629FF511E4DB0BD001F32C7 /* plistComplete.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = plistComplete.plist; sourceTree = "<group>"; };
+		4629FF511E4DB0BD001F32C7 /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		4679F22D1E51A1680015BAF4 /* AIAEverest-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AIAEverest-Bold.ttf"; sourceTree = "<group>"; };
 		4679F22E1E51A1680015BAF4 /* AIAEverest-Condensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AIAEverest-Condensed.ttf"; sourceTree = "<group>"; };
 		4679F22F1E51A1680015BAF4 /* AIAEverest-CondensedMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AIAEverest-CondensedMedium.ttf"; sourceTree = "<group>"; };
 		4679F2301E51A1680015BAF4 /* AIAEverest-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AIAEverest-ExtraBold.ttf"; sourceTree = "<group>"; };
 		4679F2311E51A1680015BAF4 /* AIAEverest-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AIAEverest-Medium.ttf"; sourceTree = "<group>"; };
 		4679F2321E51A1680015BAF4 /* AIAEverest-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AIAEverest-Regular.ttf"; sourceTree = "<group>"; };
+		467C03A21E5300DE00253071 /* Colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Colors.plist; sourceTree = "<group>"; };
+		468397B61E42EBFF00249442 /* Fonts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fonts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		468397B91E42EBFF00249442 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		468397BB1E42EBFF00249442 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		468397BE1E42EC0000249442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		468397C01E42EC0100249442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		468397C31E42EC0100249442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		468397C51E42EC0100249442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		468B9ADB1E53FC7A00B4F1D4 /* Property List1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List1.plist"; sourceTree = "<group>"; };
-		468B9ADD1E53FE2E00B4F1D4 /* Colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Colors.plist; sourceTree = "<group>"; };
-		468B9ADF1E54140200B4F1D4 /* ComponentSize.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ComponentSize.plist; sourceTree = "<group>"; };
+		468397CA1E42EC0100249442 /* FontsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		468397CE1E42EC0200249442 /* FontsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsTests.swift; sourceTree = "<group>"; };
+		468397D01E42EC0200249442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		468397D51E42EC0200249442 /* FontsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		468397D91E42EC0200249442 /* FontsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsUITests.swift; sourceTree = "<group>"; };
+		468397DB1E42EC0200249442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,10 +108,20 @@
 			isa = PBXGroup;
 			children = (
 				468397B81E42EBFF00249442 /* Fonts */,
-				09521BF31E569B2900793783 /* Fonts.app */,
-				09521BF41E569B2900793783 /* FontsTests.xctest */,
-				09521BF51E569B2900793783 /* FontsUITests.xctest */,
+				468397CD1E42EC0200249442 /* FontsTests */,
+				468397D81E42EC0200249442 /* FontsUITests */,
+				468397B71E42EBFF00249442 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		468397B71E42EBFF00249442 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				468397B61E42EBFF00249442 /* Fonts.app */,
+				468397CA1E42EC0100249442 /* FontsTests.xctest */,
+				468397D51E42EC0200249442 /* FontsUITests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		468397B81E42EBFF00249442 /* Fonts */ = {
@@ -125,13 +135,28 @@
 				468397C21E42EC0100249442 /* LaunchScreen.storyboard */,
 				468397C51E42EC0100249442 /* Info.plist */,
 				4629FF4F1E4D7026001F32C7 /* Cal.swift */,
-				468B9ADD1E53FE2E00B4F1D4 /* Colors.plist */,
-				4629FF511E4DB0BD001F32C7 /* plistComplete.plist */,
-				09521BF61E56D9AE00793783 /* WidthHeight.plist */,
-				468B9ADB1E53FC7A00B4F1D4 /* Property List1.plist */,
-				468B9ADF1E54140200B4F1D4 /* ComponentSize.plist */,
+				4629FF511E4DB0BD001F32C7 /* Property List.plist */,
+				467C03A21E5300DE00253071 /* Colors.plist */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		468397CD1E42EC0200249442 /* FontsTests */ = {
+			isa = PBXGroup;
+			children = (
+				468397CE1E42EC0200249442 /* FontsTests.swift */,
+				468397D01E42EC0200249442 /* Info.plist */,
+			);
+			path = FontsTests;
+			sourceTree = "<group>";
+		};
+		468397D81E42EC0200249442 /* FontsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				468397D91E42EC0200249442 /* FontsUITests.swift */,
+				468397DB1E42EC0200249442 /* Info.plist */,
+			);
+			path = FontsUITests;
 			sourceTree = "<group>";
 		};
 		468398061E42F26000249442 /* Font */ = {
@@ -164,7 +189,7 @@
 			);
 			name = Fonts;
 			productName = Fonts;
-			productReference = 09521BF31E569B2900793783 /* Fonts.app */;
+			productReference = 468397B61E42EBFF00249442 /* Fonts.app */;
 			productType = "com.apple.product-type.application";
 		};
 		468397C91E42EC0100249442 /* FontsTests */ = {
@@ -182,7 +207,7 @@
 			);
 			name = FontsTests;
 			productName = FontsTests;
-			productReference = 09521BF41E569B2900793783 /* FontsTests.xctest */;
+			productReference = 468397CA1E42EC0100249442 /* FontsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		468397D41E42EC0200249442 /* FontsUITests */ = {
@@ -200,7 +225,7 @@
 			);
 			name = FontsUITests;
 			productName = FontsUITests;
-			productReference = 09521BF51E569B2900793783 /* FontsUITests.xctest */;
+			productReference = 468397D51E42EC0200249442 /* FontsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -238,7 +263,7 @@
 				Base,
 			);
 			mainGroup = 468397AD1E42EBFE00249442;
-			productRefGroup = 468397AD1E42EBFE00249442;
+			productRefGroup = 468397B71E42EBFF00249442 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -254,17 +279,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				468B9ADE1E53FE2E00B4F1D4 /* Colors.plist in Resources */,
-				468B9ADC1E53FC7A00B4F1D4 /* Property List1.plist in Resources */,
-				09521BF71E56D9AE00793783 /* WidthHeight.plist in Resources */,
 				4679F23F1E51A1680015BAF4 /* AIAEverest-Medium.ttf in Resources */,
+				467C03A31E5300DE00253071 /* Colors.plist in Resources */,
 				4679F2331E51A1680015BAF4 /* AIAEverest-Bold.ttf in Resources */,
 				468397C41E42EC0100249442 /* LaunchScreen.storyboard in Resources */,
 				468397C11E42EC0100249442 /* Assets.xcassets in Resources */,
-				468B9AE01E54140200B4F1D4 /* ComponentSize.plist in Resources */,
 				4679F2421E51A1680015BAF4 /* AIAEverest-Regular.ttf in Resources */,
 				4679F2361E51A1680015BAF4 /* AIAEverest-Condensed.ttf in Resources */,
-				4629FF521E4DB0BE001F32C7 /* plistComplete.plist in Resources */,
+				4629FF521E4DB0BE001F32C7 /* Property List.plist in Resources */,
 				468397BF1E42EC0100249442 /* Main.storyboard in Resources */,
 				4679F2391E51A1680015BAF4 /* AIAEverest-CondensedMedium.ttf in Resources */,
 				4679F23C1E51A1680015BAF4 /* AIAEverest-ExtraBold.ttf in Resources */,
@@ -314,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468397CF1E42EC0200249442 /* FontsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468397DA1E42EC0200249442 /* FontsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
