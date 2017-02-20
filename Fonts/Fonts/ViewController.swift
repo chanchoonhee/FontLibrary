@@ -13,11 +13,15 @@ let screenSize = UIScreen.main.bounds
 let screenWidth = screenSize.width
 let screenHeight = screenSize.height
 
-class ViewController: UIViewController {
 
-   
-   
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+    
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    
     @IBAction func ColorMe(_ sender: Any) {
+        
         print("HelloWorld")
     }
     @IBOutlet weak var textview1: UITextView!
@@ -26,14 +30,44 @@ class ViewController: UIViewController {
     @IBOutlet weak var everestCMed: UILabel!
     @IBOutlet weak var everestBOLD: UILabel!
     
-  
-  
-
+    
+    let textCellIdentifier = "LabelCell"
+    
+    let swiftBlogs = ["Ray Wenderlich", "NSHipster", "iOS Developer Tips", "Jameson Quave", "Natasha The Robot", "Coding Explorer", "That Thing In Swift", "Andrew Bancroft", "iAchieved.it", "Airspeed Velocity"]
+    // MARK:  UITextFieldDelegate Methods
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return swiftBlogs.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: textCellIdentifier, for: indexPath as IndexPath )
+        
+        let row = indexPath.row
+        cell.textLabel?.text = swiftBlogs[row]
+        setTextAttributes(component: "apptBtn", label: (cell.textLabel)!, isSelected: false)
+        cell.textLabel?.backgroundColor = getUIColor(colorName: "P2")
+        
+        return cell
+    }
+    
+    // MARK:  UITableViewDelegate Methods
+    func tableView( tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+        
+        let row = indexPath.row
+        print(swiftBlogs[row])
+    }
+    
+    
     func checkTextAttributes(_ label: UILabel){
         print(label.attributedText!)
         
     }
-  
+    
     /// Sets the text attributes for UITextField object e.g. font color, font size, font type, and background color
     ///
     /// - Parameters:
@@ -49,7 +83,7 @@ class ViewController: UIViewController {
         if isSelected! {
             fColor = (plist["FontColorSelected"]) as! String
             if let haveFontSelected = (plist["FontTypeSelected"]){
-               fontType = haveFontSelected as! String
+                fontType = haveFontSelected as! String
                 fontSize = (plist["FontSize"]) as! CGFloat
             }
         }else{
@@ -64,10 +98,10 @@ class ViewController: UIViewController {
             NSForegroundColorAttributeName: color]
         let attributedString = NSMutableAttributedString(string: content!, attributes: attributes)
         textField.attributedText = attributedString
-       
+        
         
     }
-
+    
     
     
     /// Sets the text attributes for the UILabel object
@@ -101,8 +135,8 @@ class ViewController: UIViewController {
             NSForegroundColorAttributeName: color]
         let attributedString = NSMutableAttributedString(string: content!, attributes: attributes)
         label.attributedText = attributedString
-
-       
+        
+        
         
     }
     /// Sets the text attributes for the UITextView object
@@ -165,9 +199,9 @@ class ViewController: UIViewController {
             NSFontAttributeName: font as Any,
             NSForegroundColorAttributeName: color]
         let attributedString = NSMutableAttributedString(string: (content?.text)!, attributes: attributes)
-       button.setAttributedTitle(attributedString, for: .normal)
+        button.setAttributedTitle(attributedString, for: .normal)
         if let bgdColor : String = (plist["BackgroundColor"]) as? String{
-        let bkdcolor = getUIColor(colorName: bgdColor)
+            let bkdcolor = getUIColor(colorName: bgdColor)
             button.backgroundColor = bkdcolor
         }
         
@@ -186,8 +220,8 @@ class ViewController: UIViewController {
         let size = (width : cWidth , height : cHeight)
         print(size)
         print("\(screenHeight), \(screenWidth)")
-       return size
-
+        return size
+        
     }
     /// Retrieves the UIColor object based on the RGBA values from the plist
     ///
@@ -218,11 +252,11 @@ class ViewController: UIViewController {
         
         print(attributes)
     }
-//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as CustomTableViewCell
-//        l
-//    
-//    }
+    //    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    //        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as CustomTableViewCell
+    //        l
+    //
+    //    }
     
     
     override func viewDidLoad() {
@@ -234,8 +268,11 @@ class ViewController: UIViewController {
         HelloButton.frame = CGRect(x: 100, y: 100, width: 100, height: 30)
         getComponentSize(component: "apptBtn")
         printAttributes(component: "apptText")
-//        setTextAttributes(component: "apptText", label:tbView , isSelected: false)
-
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        //        setTextAttributes(component: "apptText", label:tbView , isSelected: false)
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -257,13 +294,13 @@ class ViewController: UIViewController {
             
         }
         let sizeDict = plistData["\(componentSize)"]!
-            return sizeDict as NSDictionary
+        return sizeDict as NSDictionary
         
     }
-            
-        
-        
-        
+    
+    
+    
+    
     
     
     func readPropertyList(color: String)  -> NSDictionary{
@@ -280,7 +317,7 @@ class ViewController: UIViewController {
             
         }
         let colorDict = plistData["\(color)"]!
-            
+        
         
         return colorDict as NSDictionary
     }
@@ -292,8 +329,8 @@ class ViewController: UIViewController {
         let plistXML = FileManager.default.contents(atPath: plistPath!)!
         do {//convert the data to a dictionary and handle errors.
             plistData = try PropertyListSerialization.propertyList(from: plistXML, options: .mutableContainersAndLeaves, format: &propertyListFormat) as! [String: [String:AnyObject]]
-//            print(data1["FontColor"]!)
-
+            //            print(data1["FontColor"]!)
+            
         } catch {
             print("Error reading plist: \(error), format: \(propertyListFormat)")
             
@@ -303,9 +340,11 @@ class ViewController: UIViewController {
         
     }
     
-
-    
 }
+
+
+
+
 
 
 

@@ -39,6 +39,7 @@
 		468B9ADC1E53FC7A00B4F1D4 /* Property List1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 468B9ADB1E53FC7A00B4F1D4 /* Property List1.plist */; };
 		468B9ADE1E53FE2E00B4F1D4 /* Colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 468B9ADD1E53FE2E00B4F1D4 /* Colors.plist */; };
 		468B9AE01E54140200B4F1D4 /* ComponentSize.plist in Resources */ = {isa = PBXBuildFile; fileRef = 468B9ADF1E54140200B4F1D4 /* ComponentSize.plist */; };
+		46AF51E21E5AD424006C4652 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AF51E11E5AD424006C4652 /* TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		468B9ADB1E53FC7A00B4F1D4 /* Property List1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List1.plist"; sourceTree = "<group>"; };
 		468B9ADD1E53FE2E00B4F1D4 /* Colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Colors.plist; sourceTree = "<group>"; };
 		468B9ADF1E54140200B4F1D4 /* ComponentSize.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ComponentSize.plist; sourceTree = "<group>"; };
+		46AF51E11E5AD424006C4652 /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,9 +128,13 @@
 				468398061E42F26000249442 /* Font */,
 				468397B91E42EBFF00249442 /* AppDelegate.swift */,
 				468397BB1E42EBFF00249442 /* ViewController.swift */,
+<<<<<<< Updated upstream
 				097165A51E5A9E6E0074D5A3 /* EnumColor.swift */,
 				09E9D6181E5AD06500553630 /* EnumComponent.swift */,
 				09E9D61A1E5AD07700553630 /* EnumSize.swift */,
+=======
+				46AF51E11E5AD424006C4652 /* TableView.swift */,
+>>>>>>> Stashed changes
 				468397BD1E42EC0000249442 /* Main.storyboard */,
 				468397C01E42EC0100249442 /* Assets.xcassets */,
 				468397C21E42EC0100249442 /* LaunchScreen.storyboard */,
@@ -316,6 +322,7 @@
 				09E9D61B1E5AD07700553630 /* EnumSize.swift in Sources */,
 				09E9D6191E5AD06500553630 /* EnumComponent.swift in Sources */,
 				4629FF501E4D7026001F32C7 /* Cal.swift in Sources */,
+				46AF51E21E5AD424006C4652 /* TableView.swift in Sources */,
 				468397BC1E42EBFF00249442 /* ViewController.swift in Sources */,
 				468397BA1E42EBFF00249442 /* AppDelegate.swift in Sources */,
 				097165A61E5A9E6E0074D5A3 /* EnumColor.swift in Sources */,
