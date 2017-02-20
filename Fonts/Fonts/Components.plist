@@ -1549,7 +1549,7 @@
 		<key>BackgroundColorSelected</key>
 		<string></string>
 	</dict>
-	<key>groupNameCbox</key>
+	<key>groupNameCBox</key>
 	<dict>
 		<key>FontType</key>
 		<string>ArialMT</string>
@@ -2144,7 +2144,7 @@
 		<key>BackgroundColorSelected</key>
 		<string></string>
 	</dict>
-	<key>sortbyCbox</key>
+	<key>sortbyCBox</key>
 	<dict>
 		<key>FontType</key>
 		<string>ArialMT</string>
