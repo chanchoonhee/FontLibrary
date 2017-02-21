@@ -63,13 +63,13 @@ class ViewController: UIViewController/*, UITableViewDelegate, UITableViewDataSo
 //    }
 //    
     
-    /// Prints the attributes of the text.
-    ///
-    /// - Parameter label: <#label description#>
-    func checkTextAttributes(_ label: UILabel){
-        print(label.attributedText!)
-        
-    }
+//    /// Prints the attributes of the text.
+//    ///
+//    /// - Parameter label: <#label description#>
+//    func checkTextAttributes(_ label: UILabel){
+//        print(label.attributedText!)
+//        
+//    }
     
     /// Sets the text attributes for UITextField object e.g. font color, font size, and font type.
     ///
@@ -300,7 +300,7 @@ class ViewController: UIViewController/*, UITableViewDelegate, UITableViewDataSo
     /// Reads the property list for the component size
     ///
     /// - Parameter componentSize: The component whose values are to be returned in percentage
-    /// - Returns: The component size in percentage
+    /// - Returns: The component size in percentage as a dictionary
     func readPropertyList(componentSize: String)-> NSDictionary{
         var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml //Format of the Property List.
         var plistData: [String: [String: AnyObject]] = [:] //Our data
@@ -327,7 +327,7 @@ class ViewController: UIViewController/*, UITableViewDelegate, UITableViewDataSo
     /// Reads the color property list
     ///
     /// - Parameter color: The color name
-    /// - Returns: The color RGBA values
+    /// - Returns: The color RGBA values in a dictionary
     func readPropertyList(color: String)  -> NSDictionary{
         var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml //Format of the Property List.
         var plistData: [String: [String: AnyObject]] = [:] //Our data
@@ -350,7 +350,7 @@ class ViewController: UIViewController/*, UITableViewDelegate, UITableViewDataSo
     /// Reads the property list for the components
     ///
     /// - Parameter component1: The component whose values are to be returned
-    /// - Returns: Values such as font type, size and font color
+    /// - Returns: Values such as font type, size and font color in a dictionary
     func readPropertyList(component1: String)-> NSDictionary{
         var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml //Format of the Property List.
         var plistData: [String: [String: AnyObject]] = [:] //Our data
