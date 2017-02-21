@@ -294,13 +294,13 @@
 	<key>addApptBtn</key>
 	<dict>
 		<key>FontType</key>
-		<string></string>
+		<string>AIAEverestCondensedMedium</string>
 		<key>FontTypeSelected</key>
 		<string></string>
 		<key>FontSize</key>
-		<integer>0</integer>
+		<integer>20</integer>
 		<key>FontColor</key>
-		<string>0</string>
+		<string>S5</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -402,7 +402,7 @@
 		<key>FontSize</key>
 		<integer>20</integer>
 		<key>FontColor</key>
-		<string>white</string>
+		<string>White</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -419,7 +419,7 @@
 		<key>FontSize</key>
 		<integer>12</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -640,7 +640,7 @@
 		<key>FontSize</key>
 		<integer>16</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -708,7 +708,7 @@
 		<key>FontSize</key>
 		<integer>26</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -725,7 +725,7 @@
 		<key>FontSize</key>
 		<integer>16</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -742,7 +742,7 @@
 		<key>FontSize</key>
 		<integer>16</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -793,7 +793,7 @@
 		<key>FontSize</key>
 		<integer>20</integer>
 		<key>FontColor</key>
-		<string>white</string>
+		<string>White</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -827,7 +827,7 @@
 		<key>FontSize</key>
 		<integer>16</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -980,7 +980,7 @@
 		<key>FontSize</key>
 		<integer>12</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -997,7 +997,7 @@
 		<key>FontSize</key>
 		<integer>26</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -1014,7 +1014,7 @@
 		<key>FontSize</key>
 		<integer>13</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -1031,7 +1031,7 @@
 		<key>FontSize</key>
 		<integer>12</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -1048,7 +1048,7 @@
 		<key>FontSize</key>
 		<integer>14</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -1065,7 +1065,7 @@
 		<key>FontSize</key>
 		<integer>9</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -1082,7 +1082,7 @@
 		<key>FontSize</key>
 		<integer>10</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -1099,7 +1099,7 @@
 		<key>FontSize</key>
 		<integer>20</integer>
 		<key>FontColor</key>
-		<string>white</string>
+		<string>White</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -1118,7 +1118,7 @@
 		<key>FontColor</key>
 		<string>P2</string>
 		<key>FontColorSelected</key>
-		<string>white</string>
+		<string>White</string>
 		<key>BackgroundColor</key>
 		<string></string>
 		<key>BackgroundColorSelected</key>
@@ -1133,7 +1133,7 @@
 		<key>FontSize</key>
 		<integer>26</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -1167,7 +1167,7 @@
 		<key>FontSize</key>
 		<integer>26</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -1320,7 +1320,7 @@
 		<key>FontSize</key>
 		<integer>60</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -1337,7 +1337,7 @@
 		<key>FontSize</key>
 		<integer>12</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -1422,7 +1422,7 @@
 		<key>FontSize</key>
 		<integer>16</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -1439,7 +1439,7 @@
 		<key>FontSize</key>
 		<integer>16</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -1577,7 +1577,7 @@
 		<key>FontColor</key>
 		<string>P2</string>
 		<key>FontColorSelected</key>
-		<string>white</string>
+		<string>White</string>
 		<key>BackgroundColor</key>
 		<string></string>
 		<key>BackgroundColorSelected</key>
@@ -1626,7 +1626,7 @@
 		<key>FontSize</key>
 		<integer>26</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -1677,7 +1677,7 @@
 		<key>FontSize</key>
 		<integer>12</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -1728,7 +1728,7 @@
 		<key>FontSize</key>
 		<integer>16</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -1779,7 +1779,7 @@
 		<key>FontSize</key>
 		<integer>16</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -1796,7 +1796,7 @@
 		<key>FontSize</key>
 		<integer>26</integer>
 		<key>FontColor</key>
-		<string>white</string>
+		<string>White</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -1815,9 +1815,9 @@
 		<key>FontColor</key>
 		<string>P2</string>
 		<key>FontColorSelected</key>
-		<string>white</string>
+		<string>White</string>
 		<key>BackgroundColor</key>
-		<string>white</string>
+		<string>White</string>
 		<key>BackgroundColorSelected</key>
 		<string>P2</string>
 	</dict>
@@ -1881,7 +1881,7 @@
 		<key>FontSize</key>
 		<integer>26</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -1985,7 +1985,7 @@
 		<key>FontColor</key>
 		<string>B4</string>
 		<key>FontColorSelected</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>BackgroundColor</key>
 		<string></string>
 		<key>BackgroundColorSelected</key>
@@ -2002,7 +2002,7 @@
 		<key>FontColor</key>
 		<string>B4</string>
 		<key>FontColorSelected</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>BackgroundColor</key>
 		<string></string>
 		<key>BackgroundColorSelected</key>
@@ -2051,7 +2051,7 @@
 		<key>FontSize</key>
 		<integer>26</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -2172,7 +2172,7 @@
 		<key>FontColor</key>
 		<string>P2</string>
 		<key>FontColorSelected</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>BackgroundColor</key>
 		<string></string>
 		<key>BackgroundColorSelected</key>
@@ -2187,7 +2187,7 @@
 		<key>FontSize</key>
 		<integer>20</integer>
 		<key>FontColor</key>
-		<string>black</string>
+		<string>Black</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
