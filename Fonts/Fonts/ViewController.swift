@@ -269,6 +269,70 @@ class ViewController: UIViewController/*, UITableViewDelegate, UITableViewDataSo
         
         print(attributes)
     }
+    /// Retrieves the UIFont object based on the values from the plist
+    ///
+    /// - Parameter component: The component name
+    /// - isSelected: the state of the UIView object
+    /// - Returns: UIFont object loaded with the RGBA Values
+   
+ func getUIFont(component : String, isSelected) -> UIFont  {
+       
+        let plist =  readPropertyList(component1: component)
+        var fontType : String = "ArialMT"
+        var fontSize : CGFloat = 12
+        if isSelected! {
+            if let haveFontSelected = (plist["FontTypeSelected"]){
+                fontType = haveFontSelected as! String
+                fontSize = (plist["FontSize"]) as! CGFloat
+            }
+        }else{
+            fontType = (plist["FontType"]) as! String
+            fontSize = (plist["FontSize"]) as! CGFloat
+        }
+        let font = UIFont(name: fontType , size: fontSize)
+        return font
+    }
+    
+    /// Retrieves the UIColor object based on the values from the plist
+    ///
+    /// - Parameter component: The component name
+    /// - isSelected: the state of the UIView object
+    /// - Returns: UIColor object loaded with the RGBA Values
+func getTextColor(component : String, isSelected : Bool?) -> UIColor  {
+     let plist =  readPropertyList(component1: component)
+        var fColor : String = "Black"
+        if isSelected! {
+            fColor = (plist["FontColorSelected"]) as! String
+            
+            }
+            else{
+            fColor = (plist["FontColor"]) as! String
+        }
+        let color = getUIColor(colorName: fColor)
+        
+    }
+    /// Retrieves the UIColor object based on the values from the plist
+    ///
+    /// - Parameter component: The component name
+    /// - isSelected: the state of the UIView object
+    /// - Returns: UIColor object loaded with the RGBA Values
+    func getBackgroundColor(component : String, isSelected : Bool?){
+        if isSelected! {
+            if let bgdColor : String = (plist["BackgroundColorSelected"]) as? String{
+                let bkdcolor = getUIColor(colorName: bgdColor)
+                button.backgroundColor = bkdcolor
+        }
+        else{
+                if let bgdColor : String = (plist["BackgroundColor"]) as? String{
+                    let bkdcolor = getUIColor(colorName: bgdColor)
+                    button.backgroundColor = bkdcolor
+            }
+            }
+        
+        }
+
+    }
+
     //    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     //        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as CustomTableViewCell
     //        l
