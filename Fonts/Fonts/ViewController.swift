@@ -275,7 +275,7 @@ class ViewController: UIViewController/*, UITableViewDelegate, UITableViewDataSo
     /// - isSelected: the state of the UIView object
     /// - Returns: UIFont object loaded with the RGBA Values
    
- func getUIFont(component : String, isSelected) -> UIFont  {
+ func getUIFont(component : String, isSelected: Bool?) -> UIFont  {
        
         let plist =  readPropertyList(component1: component)
         var fontType : String = "ArialMT"
