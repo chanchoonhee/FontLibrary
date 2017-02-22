@@ -10,7 +10,7 @@ import Foundation
 //
 //class enumSize {
 
-    enum sizes: String, CustomStringConvertible{
+    enum sizes: String{
         case activityBox = "activityBox"
         case activityNotesBox = "activityNotesBox"
         case activityTypeIcon = "activityTypeIcon"
@@ -78,9 +78,7 @@ import Foundation
         case title = "title"
         case todayBtn = "todayBtn"
         
-        var description: String {
-            return self.rawValue
-        }
+     
     }
 
 

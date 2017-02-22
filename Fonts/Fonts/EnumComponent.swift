@@ -10,7 +10,7 @@ import Foundation
 
 //class enumComponent {
 
-enum components : String, CustomStringConvertible {
+enum components : String{
     case achievement = "achievement"
     case activityBarTime = "activityBarTime"
     case activityHours = "activityHours"
@@ -138,9 +138,7 @@ enum components : String, CustomStringConvertible {
     case weeklyAchievement = "weeklyAchievement"
     case weeklyGoal = "weeklyGoal"
     
-    var description: String {
-        return self.rawValue
-    }
+  
 }
 
 //    func component (_ componentName: components ) -> String {

@@ -10,7 +10,7 @@ import Foundation
 //
 //class enumColor{
 //    
-    enum colors : String, CustomStringConvertible{
+    enum colors : String{
         case B3 = "B3"
         case B4 = "B4"
         case B5 = "B5"
@@ -47,9 +47,7 @@ import Foundation
         case Seablue20 = "Seablue20"
         case Black = "Black"
         case White = "White" 
-        var description: String {
-            return self.rawValue
-        }
+        
     }
     
 //    let colorName : String = colors.Black -> String
