@@ -13,6 +13,7 @@
 		09E9D61B1E5AD07700553630 /* EnumSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E9D61A1E5AD07700553630 /* EnumSize.swift */; };
 		4629FF501E4D7026001F32C7 /* Cal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4629FF4F1E4D7026001F32C7 /* Cal.swift */; };
 		4629FF521E4DB0BE001F32C7 /* Components.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4629FF511E4DB0BD001F32C7 /* Components.plist */; };
+		464615AC1E5E913E00EA990F /* FontStyling Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464615AB1E5E913E00EA990F /* FontStyling Library.swift */; };
 		4679F2331E51A1680015BAF4 /* AIAEverest-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F22D1E51A1680015BAF4 /* AIAEverest-Bold.ttf */; };
 		4679F2341E51A1680015BAF4 /* AIAEverest-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F22D1E51A1680015BAF4 /* AIAEverest-Bold.ttf */; };
 		4679F2351E51A1680015BAF4 /* AIAEverest-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F22D1E51A1680015BAF4 /* AIAEverest-Bold.ttf */; };
@@ -68,6 +69,7 @@
 		09E9D61A1E5AD07700553630 /* EnumSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumSize.swift; sourceTree = "<group>"; };
 		4629FF4F1E4D7026001F32C7 /* Cal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cal.swift; sourceTree = "<group>"; };
 		4629FF511E4DB0BD001F32C7 /* Components.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Components.plist; sourceTree = "<group>"; };
+		464615AB1E5E913E00EA990F /* FontStyling Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FontStyling Library.swift"; sourceTree = "<group>"; };
 		4679F22D1E51A1680015BAF4 /* AIAEverest-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AIAEverest-Bold.ttf"; sourceTree = "<group>"; };
 		4679F22E1E51A1680015BAF4 /* AIAEverest-Condensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AIAEverest-Condensed.ttf"; sourceTree = "<group>"; };
 		4679F22F1E51A1680015BAF4 /* AIAEverest-CondensedMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AIAEverest-CondensedMedium.ttf"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				09E9D6181E5AD06500553630 /* EnumComponent.swift */,
 				09E9D61A1E5AD07700553630 /* EnumSize.swift */,
 				468397BD1E42EC0000249442 /* Main.storyboard */,
+				464615AB1E5E913E00EA990F /* FontStyling Library.swift */,
 				468397C01E42EC0100249442 /* Assets.xcassets */,
 				468397C21E42EC0100249442 /* LaunchScreen.storyboard */,
 				468397C51E42EC0100249442 /* Info.plist */,
@@ -316,6 +319,7 @@
 				09E9D61B1E5AD07700553630 /* EnumSize.swift in Sources */,
 				09E9D6191E5AD06500553630 /* EnumComponent.swift in Sources */,
 				4629FF501E4D7026001F32C7 /* Cal.swift in Sources */,
+				464615AC1E5E913E00EA990F /* FontStyling Library.swift in Sources */,
 				468397BC1E42EBFF00249442 /* ViewController.swift in Sources */,
 				468397BA1E42EBFF00249442 /* AppDelegate.swift in Sources */,
 				097165A61E5A9E6E0074D5A3 /* EnumColor.swift in Sources */,

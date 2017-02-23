@@ -5,11 +5,11 @@
 	<key>achievement</key>
 	<dict>
 		<key>FontType</key>
-		<string></string>
+		<string>ArialMT</string>
 		<key>FontTypeSelected</key>
 		<string></string>
 		<key>FontSize</key>
-		<integer>0</integer>
+		<integer>16</integer>
 		<key>FontColor</key>
 		<string>S1</string>
 		<key>FontColorSelected</key>
@@ -39,13 +39,13 @@
 	<key>activityHours</key>
 	<dict>
 		<key>FontType</key>
-		<string></string>
+		<string>Arial-BoldMT</string>
 		<key>FontTypeSelected</key>
 		<string></string>
 		<key>FontSize</key>
-		<integer>0</integer>
+		<integer>16</integer>
 		<key>FontColor</key>
-		<string>0</string>
+		<string>S6</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
@@ -1858,13 +1858,13 @@
 	<key>recTime</key>
 	<dict>
 		<key>FontType</key>
-		<string></string>
+		<string>ArialMT</string>
 		<key>FontTypeSelected</key>
 		<string></string>
 		<key>FontSize</key>
-		<integer>0</integer>
+		<integer>16</integer>
 		<key>FontColor</key>
-		<string></string>
+		<string>B4</string>
 		<key>FontColorSelected</key>
 		<string></string>
 		<key>BackgroundColor</key>
