@@ -101,7 +101,6 @@
 		468397B81E42EBFF00249442 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				468398061E42F26000249442 /* Font */,
 				468397B91E42EBFF00249442 /* AppDelegate.swift */,
 				468397BB1E42EBFF00249442 /* ViewController.swift */,
 				097165A51E5A9E6E0074D5A3 /* EnumColor.swift */,
@@ -120,13 +119,6 @@
 				468B9ADF1E54140200B4F1D4 /* ComponentSize.plist */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		468398061E42F26000249442 /* Font */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
