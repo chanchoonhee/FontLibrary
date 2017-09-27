@@ -6,10 +6,7 @@
 //  Copyright © 2017 Chan Choon Hee. All rights reserved.
 //
 import UIKit
-import Foundation
-var aIACondMedium16 = UIFont(name: "AIAEverestCondensedMedium", size: 16)
-var aIACondMedium20 = UIFont(name: "AIAEverestCondensedMedium", size: 20)
-var aIACondMedium26 = UIFont(name: "AIAEverestCondensedMedium", size: 26)
+import Foundationß
 var arial9 = UIFont(name: "ArialMT", size: 9)
 var arial10 = UIFont(name: "ArialMT", size: 10)
 var arial12 = UIFont(name: "ArialMT", size: 12)
