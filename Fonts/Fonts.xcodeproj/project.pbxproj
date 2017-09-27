@@ -14,24 +14,6 @@
 		4629FF501E4D7026001F32C7 /* Cal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4629FF4F1E4D7026001F32C7 /* Cal.swift */; };
 		4629FF521E4DB0BE001F32C7 /* Components.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4629FF511E4DB0BD001F32C7 /* Components.plist */; };
 		464615AC1E5E913E00EA990F /* FontStyling Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464615AB1E5E913E00EA990F /* FontStyling Library.swift */; };
-		4679F2331E51A1680015BAF4 /* AIAEverest-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F22D1E51A1680015BAF4 /* AIAEverest-Bold.ttf */; };
-		4679F2341E51A1680015BAF4 /* AIAEverest-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F22D1E51A1680015BAF4 /* AIAEverest-Bold.ttf */; };
-		4679F2351E51A1680015BAF4 /* AIAEverest-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F22D1E51A1680015BAF4 /* AIAEverest-Bold.ttf */; };
-		4679F2361E51A1680015BAF4 /* AIAEverest-Condensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F22E1E51A1680015BAF4 /* AIAEverest-Condensed.ttf */; };
-		4679F2371E51A1680015BAF4 /* AIAEverest-Condensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F22E1E51A1680015BAF4 /* AIAEverest-Condensed.ttf */; };
-		4679F2381E51A1680015BAF4 /* AIAEverest-Condensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F22E1E51A1680015BAF4 /* AIAEverest-Condensed.ttf */; };
-		4679F2391E51A1680015BAF4 /* AIAEverest-CondensedMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F22F1E51A1680015BAF4 /* AIAEverest-CondensedMedium.ttf */; };
-		4679F23A1E51A1680015BAF4 /* AIAEverest-CondensedMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F22F1E51A1680015BAF4 /* AIAEverest-CondensedMedium.ttf */; };
-		4679F23B1E51A1680015BAF4 /* AIAEverest-CondensedMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F22F1E51A1680015BAF4 /* AIAEverest-CondensedMedium.ttf */; };
-		4679F23C1E51A1680015BAF4 /* AIAEverest-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F2301E51A1680015BAF4 /* AIAEverest-ExtraBold.ttf */; };
-		4679F23D1E51A1680015BAF4 /* AIAEverest-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F2301E51A1680015BAF4 /* AIAEverest-ExtraBold.ttf */; };
-		4679F23E1E51A1680015BAF4 /* AIAEverest-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F2301E51A1680015BAF4 /* AIAEverest-ExtraBold.ttf */; };
-		4679F23F1E51A1680015BAF4 /* AIAEverest-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F2311E51A1680015BAF4 /* AIAEverest-Medium.ttf */; };
-		4679F2401E51A1680015BAF4 /* AIAEverest-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F2311E51A1680015BAF4 /* AIAEverest-Medium.ttf */; };
-		4679F2411E51A1680015BAF4 /* AIAEverest-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F2311E51A1680015BAF4 /* AIAEverest-Medium.ttf */; };
-		4679F2421E51A1680015BAF4 /* AIAEverest-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F2321E51A1680015BAF4 /* AIAEverest-Regular.ttf */; };
-		4679F2431E51A1680015BAF4 /* AIAEverest-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F2321E51A1680015BAF4 /* AIAEverest-Regular.ttf */; };
-		4679F2441E51A1680015BAF4 /* AIAEverest-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4679F2321E51A1680015BAF4 /* AIAEverest-Regular.ttf */; };
 		468397BA1E42EBFF00249442 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468397B91E42EBFF00249442 /* AppDelegate.swift */; };
 		468397BC1E42EBFF00249442 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468397BB1E42EBFF00249442 /* ViewController.swift */; };
 		468397BF1E42EC0100249442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468397BD1E42EC0000249442 /* Main.storyboard */; };
@@ -70,12 +52,6 @@
 		4629FF4F1E4D7026001F32C7 /* Cal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cal.swift; sourceTree = "<group>"; };
 		4629FF511E4DB0BD001F32C7 /* Components.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Components.plist; sourceTree = "<group>"; };
 		464615AB1E5E913E00EA990F /* FontStyling Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FontStyling Library.swift"; sourceTree = "<group>"; };
-		4679F22D1E51A1680015BAF4 /* AIAEverest-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AIAEverest-Bold.ttf"; sourceTree = "<group>"; };
-		4679F22E1E51A1680015BAF4 /* AIAEverest-Condensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AIAEverest-Condensed.ttf"; sourceTree = "<group>"; };
-		4679F22F1E51A1680015BAF4 /* AIAEverest-CondensedMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AIAEverest-CondensedMedium.ttf"; sourceTree = "<group>"; };
-		4679F2301E51A1680015BAF4 /* AIAEverest-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AIAEverest-ExtraBold.ttf"; sourceTree = "<group>"; };
-		4679F2311E51A1680015BAF4 /* AIAEverest-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AIAEverest-Medium.ttf"; sourceTree = "<group>"; };
-		4679F2321E51A1680015BAF4 /* AIAEverest-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AIAEverest-Regular.ttf"; sourceTree = "<group>"; };
 		468397B91E42EBFF00249442 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		468397BB1E42EBFF00249442 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		468397BE1E42EC0000249442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -149,12 +125,6 @@
 		468398061E42F26000249442 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				4679F22D1E51A1680015BAF4 /* AIAEverest-Bold.ttf */,
-				4679F22E1E51A1680015BAF4 /* AIAEverest-Condensed.ttf */,
-				4679F22F1E51A1680015BAF4 /* AIAEverest-CondensedMedium.ttf */,
-				4679F2301E51A1680015BAF4 /* AIAEverest-ExtraBold.ttf */,
-				4679F2311E51A1680015BAF4 /* AIAEverest-Medium.ttf */,
-				4679F2321E51A1680015BAF4 /* AIAEverest-Regular.ttf */,
 			);
 			name = Font;
 			sourceTree = "<group>";
@@ -269,17 +239,11 @@
 				468B9ADE1E53FE2E00B4F1D4 /* Colors.plist in Resources */,
 				468B9ADC1E53FC7A00B4F1D4 /* Property List1.plist in Resources */,
 				09521BF71E56D9AE00793783 /* Size.plist in Resources */,
-				4679F23F1E51A1680015BAF4 /* AIAEverest-Medium.ttf in Resources */,
-				4679F2331E51A1680015BAF4 /* AIAEverest-Bold.ttf in Resources */,
 				468397C41E42EC0100249442 /* LaunchScreen.storyboard in Resources */,
 				468397C11E42EC0100249442 /* Assets.xcassets in Resources */,
 				468B9AE01E54140200B4F1D4 /* ComponentSize.plist in Resources */,
-				4679F2421E51A1680015BAF4 /* AIAEverest-Regular.ttf in Resources */,
-				4679F2361E51A1680015BAF4 /* AIAEverest-Condensed.ttf in Resources */,
 				4629FF521E4DB0BE001F32C7 /* Components.plist in Resources */,
 				468397BF1E42EC0100249442 /* Main.storyboard in Resources */,
-				4679F2391E51A1680015BAF4 /* AIAEverest-CondensedMedium.ttf in Resources */,
-				4679F23C1E51A1680015BAF4 /* AIAEverest-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,12 +251,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4679F2401E51A1680015BAF4 /* AIAEverest-Medium.ttf in Resources */,
-				4679F23A1E51A1680015BAF4 /* AIAEverest-CondensedMedium.ttf in Resources */,
-				4679F2431E51A1680015BAF4 /* AIAEverest-Regular.ttf in Resources */,
-				4679F2341E51A1680015BAF4 /* AIAEverest-Bold.ttf in Resources */,
-				4679F2371E51A1680015BAF4 /* AIAEverest-Condensed.ttf in Resources */,
-				4679F23D1E51A1680015BAF4 /* AIAEverest-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,12 +258,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4679F2411E51A1680015BAF4 /* AIAEverest-Medium.ttf in Resources */,
-				4679F23B1E51A1680015BAF4 /* AIAEverest-CondensedMedium.ttf in Resources */,
-				4679F2441E51A1680015BAF4 /* AIAEverest-Regular.ttf in Resources */,
-				4679F2351E51A1680015BAF4 /* AIAEverest-Bold.ttf in Resources */,
-				4679F2381E51A1680015BAF4 /* AIAEverest-Condensed.ttf in Resources */,
-				4679F23E1E51A1680015BAF4 /* AIAEverest-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
